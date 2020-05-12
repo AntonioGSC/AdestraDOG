@@ -1,7 +1,7 @@
 # AdestraDOG - Projeto Integrador
 
 ## Resumo do tema:
-A ideia do projeto é desenvolver um ambiente de interação para que donos de cães possam encontrar adestradores ou cuidadores para seus pets, nele terá diversas pessoas com conhecimento sobre cães, onde será possível avaliar e até mesmo ver o serviço e reputação de quem fará o serviço. Com uma interface amigável e funcional em qualquer dispositivo para a maior inclusão de pessoas.
+A ideia do projeto é desenvolver um ambiente de interação para que donos de cães possam encontrar adestradores ou cuidadores para seus pets, nele terá diversas pessoas com conhecimento sobre cães, onde será possível avaliar e até mesmo ver o trabalho e reputação de quem fará o serviço. Com uma interface amigável e funcional em qualquer dispositivo para a maior inclusão de pessoas.
 
 ## Informações:
 - Digital House & Estação Hack from Facebook
@@ -20,5 +20,5 @@ A ideia do projeto é desenvolver um ambiente de interação para que donos de c
  - Stefany Silva
     - Email: stefanysantossilva.10@gmail.com
 
- - Vinícius
+ - Vinícius Almeida
     - Email: viniciusnalm@gmail.com
