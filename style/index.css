@@ -107,11 +107,129 @@
     width: 100%;
 }
 
+/* ============================================================================================================================================================= */
+
 .container{
     width: 960px;
     margin: 0 auto;
-    padding: 95px 0 30px;
+    /* border: black solid 1px; */
 }
+
+.imagem-principal{
+    width: 100%;
+}
+
+.menu-principal{
+    display: inline-block;
+    background-color: #f1e3b1;
+}
+
+.happy-dog{
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slogan{
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 16%;
+    right: 55%;
+}
+
+.frase-slogan{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.depoimentos{
+    margin: 0;
+    background: url("../img/div2-fundo.gif");
+    width: 100%;
+}
+
+.titulo-centenas{
+    color: #d06f25;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 20px 0 10px;
+}
+
+.depoimentos-titulo{
+    color: #d08f25;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 0 0 20px;
+}
+
+.depoimentos-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin: 20px 0;
+}
+
+.cartao-depoimento{
+    background-color: #d07124;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* margin: 20px 20px; */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.perfil-depoimento{
+    text-align: center;
+    align-self: center;  
+}
+
+.perfil-foto{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 10px 0;
+}
+
+.perfil-sergio{
+    object-position: left;
+}
+
+.info-perfil{
+    color: #ecd19a;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.texto-depoimento{
+    text-align: center;
+    align-self: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 10px 2px;
+}
+
+.sinopse-depoimento{
+    color: white;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+.rodape-depoimento{
+    color: #FFFF9F;
+}
+
+.beneficios-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ============================================================================================================================================================= */
 
 footer{
     padding: 10px;
@@ -130,8 +248,9 @@ footer{
 .logos-footer{
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .logo-footer-logo{
-    width: 50px;
+    width: 35px;
 }
