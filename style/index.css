@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 10;
 }
 
 .logo{
@@ -147,9 +148,11 @@
 }
 
 .depoimentos{
-    margin: 0;
-    background: url("../img/div2-fundo.gif");
-    width: 100%;
+    background: url("../img/div2-fundo.gif") no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
 .titulo-centenas{
@@ -179,7 +182,6 @@
     background-color: #d07124;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* margin: 20px 20px; */
     border-radius: 20px;
     padding: 20px;
 }
