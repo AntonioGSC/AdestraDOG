@@ -1,16 +1,73 @@
 .search-container {
-    width: 100vw;
+    width: 100%;
+    position: relative;
 }
+
 
 .search-dogs {
     width: 100%;
-    
-}
-
-
-.container {
-    width: 960px;
     margin: 0 auto;
    
 }
+
+.container {
+    width: 960px;
+    margin: 0 auto;  
+}
+
+.search-bar {
+    position: absolute;
+    bottom: 23em;
+    left: 32em;    
+}
+
+label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8em;
+    
+}
+
+textarea {
+    resize: none;
+}
+
+.search-txt {
+    flex-grow: 2;
+    border:none;  
+    padding: 1.7em 25em 1.7em 2em;
+    border-radius: 20px;
+    width: 100%;
+    background-color:#EEDEA3;
+    
+}
+
+::placeholder {
+    color: #d06f25;
+    font-weight: bold;
+}
+
+.btn-search {
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    background-color:  #d06f25;   
+    transition: 500ms; 
+      
+}
+
+.btn-search:hover {
+    background-color:#a06f25;
+}
+
+
+.button-image {
+    width: 6em;
+    height: 4.3em;
+}
+
+
 
