@@ -152,7 +152,8 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; 
+    background-size: cover;
+    padding-bottom: 30px; 
 }
 
 .titulo-centenas{
@@ -226,9 +227,81 @@
     color: #FFFF9F;
 }
 
+.titulo-beneficios{
+    color: #6c563f; 
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0 0;
+}
+
 .beneficios-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.beneficios-items{
+    text-align: center;
+}
+
+.image-benefits{
+    width: 100%;
+}
+
+.text-beneficios{
+    color: #d06f25;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.encontrar-adestrador{
+    background-color: #d07124;
+    color: white;
+    padding: 50px 0 0;
+}
+
+.titulo-encontrar{
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cadastro-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    grid-gap: 100px;
+}
+
+.imagem-cadastro{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.img-encontrar{
+    width: 140px;
+}
+
+.img-encontrar-lupa{
+    width: 120px;
+}
+
+.text-encontrar{
+    font-size: 24px;
+}
+
+.cadastrar-button-encontrar{
+    justify-self: center;
+    width: 300px;
+}
+
+.encontrar-link{
+    text-decoration: none;
+    color: white;
 }
 
 /* ============================================================================================================================================================= */
@@ -255,4 +328,8 @@ footer{
 
 .logo-footer-logo{
     width: 35px;
+}
+
+@media (max-width: 960px){ 
+    
 }
