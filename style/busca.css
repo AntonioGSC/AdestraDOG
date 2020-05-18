@@ -33,6 +33,11 @@ textarea {
     resize: none;
 }
 
+input, select, textarea{
+    color: #d06f25;
+    font-weight: bold;
+}
+
 .search-txt {
     flex-grow: 2;
     border:none;  
@@ -74,7 +79,7 @@ textarea {
 
 .wrapper {
     background-color: #d06f25;
-    display: none;
+   /* display: none;  */
 }
 
 .wrapper-show {
@@ -117,6 +122,7 @@ textarea {
     border-bottom: 0.5px black solid;
     display: flex;
     flex-flow: row nowrap;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* left-hand side of the profile interface (profile picture + feedbacks) */
@@ -129,11 +135,19 @@ textarea {
     
 }
 
-.profile-image {
-    width: 60%;
-    align-self: center;
-    margin-bottom: 0.6em;
+.div-imagem {
+    text-align: center;
+    max-width: 100%;
+    
 }
+
+.profile-image {
+    max-width:100%;
+    align-self: center;
+    margin-bottom: 0.6em;   
+}
+
+
 
 .estrelas {
     display: flex;
@@ -212,7 +226,64 @@ textarea {
 
 .div-final {
     width: 960px;
+    height: 250px;
     margin: 0 auto; 
-    
-    margin-top: 3em;
+    margin-top: 4em;
+    display: flex;
 }
+
+
+.card-left-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card-left {
+    width: 80%;
+    background-color: #745E46;
+    border-radius: 25px;
+    padding: 1em;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-right {
+    width: 80%;
+    background-color: #745E46;
+    border-radius: 25px;
+    padding: 1em;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.sign-up {
+    
+    color: white;
+    
+}
+
+.sign-up:hover {
+    color: #d06f25
+}
+
+
+
