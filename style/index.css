@@ -63,7 +63,7 @@
     right: 0;
     background-color: #f1e375; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 40px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
   
@@ -382,13 +382,17 @@ footer{
     }
 
     .beneficios-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 0px;
+    }
+
+    .beneficios-items{
+        grid-column: 2/3;
     }
 
     .cadastro-home{
         grid-template-columns: 1fr;
-        grid-gap: 30px;
+        grid-gap: 40px;
     }
 
     .logo{
@@ -396,12 +400,12 @@ footer{
     }
 
     .logo-responsivo{
-        display: inline-block;
-        width: 85px;
+        display: block;
+        width: 80px;
     }
 
     .sidebar {
-        top: 60px;
+        top: 55px;
     }
 
     .menu-item{
@@ -409,13 +413,36 @@ footer{
     }
 
     .happy-dog{
-        width: 100%;
-        object-position: -500px;
+        object-position: 70%;
     }
 
     .slogan{
         text-align: center;
         top: 90px;
         right: 0%;
+    }
+    .img-encontrar{
+        width: 100px;
+    }
+    
+    .img-encontrar-lupa{
+        width: 80px;
+    }
+    
+    .frase-slogan, .titulo-encontrar{
+        font-size: 20px;
+        padding: 0 5px;
+    }
+
+    .encontrar-adestrador{
+        padding: 30px 10px 0;
+    }
+
+    .text-encontrar{
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 16px;
     }
 }
