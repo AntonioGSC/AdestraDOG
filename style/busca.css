@@ -79,7 +79,7 @@ input, select, textarea{
 
 .wrapper {
     background-color: #d06f25;
-   /* display: none;  */
+    display: none; 
 }
 
 .wrapper-show {
