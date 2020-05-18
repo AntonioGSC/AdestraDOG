@@ -17,7 +17,12 @@
 .search-bar {
     position: absolute;
     bottom: 45%;
-    left: 35%;    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 600px;    
 }
 
 label {
@@ -41,7 +46,7 @@ input, select, textarea{
 .search-txt {
     flex-grow: 2;
     border:none;  
-    padding: 1.7em 25em 1.7em 2em;
+    padding: 1.7em 20em 1.7em 2em;
     border-radius: 20px;
     width: 100%;
     background-color:#EEDEA3;
