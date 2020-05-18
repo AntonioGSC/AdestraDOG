@@ -1,18 +1,17 @@
+/* first page: image + search bar */
+
 .search-container {
     width: 100%;
     position: relative;
+    background-color:#d06f25 ;
 }
 
 
 .search-dogs {
     width: 100%;
-    margin: 0 auto;
-   
-}
-
-.container {
-    width: 960px;
-    margin: 0 auto;  
+    height: 750px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .search-bar {
@@ -60,7 +59,8 @@ textarea {
 }
 
 .btn-search:hover {
-    background-color:#a06f25;
+    background-color:#d04f25;
+    cursor: pointer;
 }
 
 
@@ -70,4 +70,149 @@ textarea {
 }
 
 
+/* end of search-bar --> second main div (search result -----------------------------------------------------------------------------------------)*/
 
+.wrapper {
+    background-color: #d06f25;
+   /* display: none; */ 
+}
+
+.wrapper-show {
+    display: block;
+}
+
+
+
+.container {
+    width: 960px;
+    margin: 0 auto;  
+    background-color: #EEDEA3;
+    border: 1px black solid;
+   
+    
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    padding: 2em;
+}
+
+.userMessage {
+    font-size: 1.5em;
+    color: white;
+    padding: 0.5em;
+
+}
+
+.cityName {
+    color: black;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+/* start of the profile list */
+
+.adestradorProfile {
+    border-bottom: 0.5px black solid;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* left-hand side of the profile interface (profile picture + feedbacks) */
+
+.left-hand-side {
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 1em;
+    
+}
+
+.profile-image {
+    width: 60%;
+    align-self: center;
+    margin-bottom: 0.6em;
+}
+
+.estrelas {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 0.6em;
+}
+.estrela {
+    width: 40%;
+}
+
+.avaliacao {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #999999;
+    text-align: center;
+    padding-bottom: 0.6em;
+}
+
+
+/* start of the central part of the profile (user name, user @ -- presumably tweeter -- and a quick description) */
+
+.center-profile {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly
+
+}
+
+.nome {
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+
+.twitter {
+    font-weight: bold;
+    
+}
+
+.description {
+    color: #999999;
+    font-weight: bold;
+}
+
+/* start of the right-hand-side, with the contact button */
+
+.right-hand-side {
+    width: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button {
+    padding: 1.3em 4em;
+    border-radius: 30px;
+    border: none;
+    background-color: #d06f25;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 700ms;
+}
+
+.contact-button:hover {
+    padding: 1.4em 4em;
+    font-size: 1em;
+}
+
+
+/* start of the last section */
+
+.div-final {
+    width: 960px;
+    margin: 0 auto; 
+    
+    margin-top: 3em;
+}
