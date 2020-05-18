@@ -3,6 +3,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.logo-responsivo{
+    display: none;
+}
+
 .fixed-bar{
     position: fixed;
     width: 100%;
@@ -330,6 +334,88 @@ footer{
     width: 35px;
 }
 
-@media (max-width: 960px){ 
-    
+
+
+@media (max-width: 1000px){ 
+    .container{
+        width: 800px;
+    }
+
+    .slogan{
+        left: 3%;
+    }
+}
+
+@media (max-width: 900px){ 
+    .container{
+        width: 740px;
+    }
+
+    .slogan{
+        left: 1%;
+        right: 45%;
+    }
+
+    .depoimentos-div{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px 0;
+    }
+
+    .beneficios-grid{
+        grid-gap: 0px;
+    }
+
+    .cadastrar-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 760px){ 
+    .container{
+        width: auto;
+    }
+    .depoimentos-div{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 5px;
+    }
+
+    .beneficios-grid{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+
+    .cadastro-home{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-responsivo{
+        display: inline-block;
+        width: 85px;
+    }
+
+    .sidebar {
+        top: 60px;
+    }
+
+    .menu-item{
+        font-size: 22px;
+    }
+
+    .happy-dog{
+        width: 100%;
+        object-position: -500px;
+    }
+
+    .slogan{
+        text-align: center;
+        top: 90px;
+        right: 0%;
+    }
 }
