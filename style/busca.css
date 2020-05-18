@@ -11,13 +11,13 @@
     width: 100%;
     height: 750px;
     object-fit: cover;
-    object-position: center;
+    object-position: center 35%;
 }
 
 .search-bar {
     position: absolute;
-    bottom: 23em;
-    left: 32em;    
+    bottom: 45%;
+    left: 35%;    
 }
 
 label {
@@ -74,7 +74,7 @@ textarea {
 
 .wrapper {
     background-color: #d06f25;
-   /* display: none; */ 
+    display: none;
 }
 
 .wrapper-show {
