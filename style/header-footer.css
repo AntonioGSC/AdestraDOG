@@ -112,11 +112,12 @@
     width: 100%;
 }
 
-/* ============================================================================================================================================================= */
-
-/* ============================================================================================================================================================= */
+body{
+    background-color: #d06f25;
+}
 
 footer{
+    margin-top: 100px;
     padding: 10px;
     font-size: 20px;
     background-color: black;
@@ -138,117 +139,4 @@ footer{
 
 .logo-footer-logo{
     width: 35px;
-}
-
-
-
-@media (max-width: 1000px){ 
-    .container{
-        width: 800px;
-    }
-
-    .slogan{
-        left: 3%;
-    }
-}
-
-@media (max-width: 900px){ 
-    .container{
-        width: 740px;
-    }
-
-    .slogan{
-        left: 1%;
-        right: 45%;
-    }
-
-    .depoimentos-div{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        margin: 10px 0;
-    }
-
-    .beneficios-grid{
-        grid-gap: 0px;
-    }
-
-    .cadastrar-nav{
-        display: none;
-    }
-}
-
-@media (max-width: 760px){ 
-    .container{
-        width: auto;
-    }
-    .depoimentos-div{
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-        margin: 5px;
-    }
-
-    .beneficios-grid{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 0px;
-    }
-
-    .beneficios-items{
-        grid-column: 2/3;
-    }
-
-    .cadastro-home{
-        grid-template-columns: 1fr;
-        grid-gap: 40px;
-    }
-
-    .logo{
-        display: none;
-    }
-
-    .logo-responsivo{
-        display: block;
-        width: 80px;
-    }
-
-    .sidebar {
-        top: 55px;
-    }
-
-    .menu-item{
-        font-size: 22px;
-    }
-
-    .happy-dog{
-        object-position: 70%;
-    }
-
-    .slogan{
-        text-align: center;
-        top: 90px;
-        right: 0%;
-    }
-    .img-encontrar{
-        width: 100px;
-    }
-    
-    .img-encontrar-lupa{
-        width: 80px;
-    }
-    
-    .frase-slogan, .titulo-encontrar{
-        font-size: 20px;
-        padding: 0 5px;
-    }
-
-    .encontrar-adestrador{
-        padding: 30px 10px 0;
-    }
-
-    .text-encontrar{
-        font-size: 20px;
-    }
-
-    footer{
-        font-size: 16px;
-    }
 }
