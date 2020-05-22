@@ -12,6 +12,7 @@ botao.addEventListener("click", function() {
 
 // functions used below
 
+
 function showWrapper() {
     document.querySelector(".wrapper").classList.add("wrapper-show");
 }

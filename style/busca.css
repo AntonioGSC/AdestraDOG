@@ -142,14 +142,15 @@ input, select, textarea{
 
 .div-imagem {
     text-align: center;
-    max-width: 100%;
+    width: 100%;
     
 }
 
 .profile-image {
-    max-width:100%;
+    max-width:60%;
     align-self: center;
-    margin-bottom: 0.6em;   
+    margin-bottom: 0.6em; 
+    border-radius: 50% 
 }
 
 
