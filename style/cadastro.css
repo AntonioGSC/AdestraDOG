@@ -1,0 +1,370 @@
+                                                                * {
+                                                                    box-sizing: border-box;
+                                                                    font-family: 'Montserrat', sans-serif;
+                                                                }
+                                                                
+                                                                .fixed-bar {
+                                                                    position: fixed;
+                                                                    width: 100%;
+                                                                    background-color: #f1e375;
+                                                                    display: flex;
+                                                                    justify-content: space-around;
+                                                                    align-items: center;
+                                                                }
+                                                                
+                                                                .nav-bar ul li a:hover {
+                                                                    color: black;
+                                                                    text-decoration: none;
+                                                                }
+                                                                
+                                                                .menu-item:hover {
+                                                                    color: black;
+                                                                }
+                                                                
+                                                                .logo {
+                                                                    width: 320px;
+                                                                }
+                                                                
+                                                                .imagem-logo {
+                                                                    width: 100%;
+                                                                }
+                                                                
+                                                                .nav-bar ul {
+                                                                    display: flex;
+                                                                    justify-content: space-around;
+                                                                    font-family: 'Montserrat Alternates', sans-serif;
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                .nav-bar ul li {
+                                                                    margin: 0em 1em;
+                                                                }
+                                                                
+                                                                .menu-item {
+                                                                    color: #735d45;
+                                                                    font-size: 25px;
+                                                                    text-decoration: none;
+                                                                    display: flex;
+                                                                }
+                                                                
+                                                                .menu-item-buscar {
+                                                                    color: #d06f25;
+                                                                }
+                                                                
+                                                                #menu-icon {
+                                                                    width: 25px;
+                                                                    margin-left: 5px;
+                                                                    fill: #735d45;
+                                                                }
+                                                                /* The sidebar menu */
+                                                                
+                                                                .sidebar {
+                                                                    height: 100%;
+                                                                    /* 100% Full-height */
+                                                                    width: 0;
+                                                                    /* 0 width - change this with JavaScript */
+                                                                    position: fixed;
+                                                                    /* Stay in place */
+                                                                    z-index: 1;
+                                                                    /* Stay on top */
+                                                                    top: 90px;
+                                                                    right: 0;
+                                                                    background-color: #f1e375;
+                                                                    /* Black*/
+                                                                    overflow-x: hidden;
+                                                                    /* Disable horizontal scroll */
+                                                                    padding-top: 60px;
+                                                                    /* Place content 60px from the top */
+                                                                    transition: 0.5s;
+                                                                    /* 0.5 second transition effect to slide in the sidebar */
+                                                                }
+                                                                /* The sidebar links */
+                                                                
+                                                                .sidebar a {
+                                                                    padding: 8px 8px 8px 32px;
+                                                                    text-decoration: none;
+                                                                    font-size: 25px;
+                                                                    color: #818181;
+                                                                    display: block;
+                                                                    transition: 0.3s;
+                                                                }
+                                                                /* When you mouse over the navigation links, change their color */
+                                                                
+                                                                .sidebar a:hover {
+                                                                    color: #f1f1f1;
+                                                                }
+                                                                /* Position and style the close button (top right corner) */
+                                                                
+                                                                .sidebar .closebtn {
+                                                                    position: absolute;
+                                                                    top: 0;
+                                                                    right: 25px;
+                                                                    font-size: 36px;
+                                                                    margin-left: 50px;
+                                                                }
+                                                                /* The button used to open the sidebar */
+                                                                
+                                                                .openbtn {
+                                                                    cursor: pointer;
+                                                                    background-color: transparent;
+                                                                    border: none;
+                                                                }
+                                                                /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                                                                
+                                                                @media screen and (max-height: 450px) {
+                                                                    .sidebar {
+                                                                        padding-top: 15px;
+                                                                    }
+                                                                    .sidebar a {
+                                                                        font-size: 18px;
+                                                                    }
+                                                                }
+                                                                
+                                                                .image-collapse {
+                                                                    width: 250px;
+                                                                }
+                                                                
+                                                                .logo-collapse {
+                                                                    width: 100%;
+                                                                }
+                                                                /*----------------------------------------------------------------------------------------*/
+                                                                
+                                                                body {
+                                                                    background-color: #EEDEA3;
+                                                                    height: 100vh;
+                                                                }
+                                                                
+                                                                .container {
+                                                                    width: 90vw;
+                                                                    /* width: 960px; */
+                                                                    height: 100vh;
+                                                                    margin: 0 auto;
+                                                                    padding: 95px 0 30px;
+                                                                }
+                                                                
+                                                                .titulo {
+                                                                    color: #745E46;
+                                                                    font-weight: bold;
+                                                                    margin-top: 5vh;
+                                                                    margin-bottom: 5vh;
+                                                                }
+                                                                
+                                                                .link-login {
+                                                                    font-size: 15px;
+                                                                    height: 20vh;
+                                                                }
+                                                                
+                                                                #link {
+                                                                    background-color: transparent;
+                                                                    color: #999999;
+                                                                }
+                                                                
+                                                                #link:hover {
+                                                                    text-decoration-line: underline;
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                #Botao-entrar {
+                                                                    border: #D07025;
+                                                                    font-family: system-ui;
+                                                                    font-size: 16px;
+                                                                    background-color: #D07025;
+                                                                    color: #fff;
+                                                                }
+                                                                
+                                                                #Botao-entrar:hover {
+                                                                    background-color: #FCB631;
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                .modal-title {
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    color: #745E46;
+                                                                }
+                                                                
+                                                                .col-form-label {
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    color: #745E46;
+                                                                }
+                                                                
+                                                                .titulo-novaconta h4 {
+                                                                    color: #D07025;
+                                                                    text-align: center;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 2.2em;
+                                                                }
+                                                                
+                                                                .titulo-novaconta {
+                                                                    color: #745E46;
+                                                                    font-weight: bold;
+                                                                    text-align: center;
+                                                                    height: 5vh;
+                                                                }
+                                                                
+                                                                .card {
+                                                                    background-color: #D07025;
+                                                                    box-sizing: border-box;
+                                                                    margin-top: 5vh;
+                                                                }
+                                                                
+                                                                .row {
+                                                                    height: 50vh;
+                                                                }
+                                                                
+                                                                .conta-login {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                }
+                                                                
+                                                                #link-login02 {
+                                                                    border: #D07025;
+                                                                    text-align: center;
+                                                                    cursor: pointer;
+                                                                    padding: 1rem 3rem;
+                                                                    display: inline-block;
+                                                                    border-radius: 3px;
+                                                                    margin: 1rem;
+                                                                    text-decoration: none;
+                                                                    font-family: system-ui;
+                                                                    font-size: 16px;
+                                                                    background-color: #D07025;
+                                                                    color: #fff;
+                                                                }
+                                                                
+                                                                #link-login02:hover {
+                                                                    background-color: #FCB631;
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                #botao_cadastro1 {
+                                                                    background-color: #745E46;
+                                                                    color: #f1f1f1;
+                                                                }
+                                                                
+                                                                #botao_cadastro1:hover {
+                                                                    background-color: #FCB631;
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                #botao_cadastro02 {
+                                                                    background-color: #745E46;
+                                                                    color: #f1f1f1;
+                                                                }
+                                                                
+                                                                #botao_cadastro02:hover {
+                                                                    background-color: #FCB631;
+                                                                    font-weight: bold;
+                                                                }
+                                                                /*----------------------------------------------------------------------------------------*/
+                                                                
+                                                                footer {
+                                                                    padding: 10px;
+                                                                    font-size: 20px;
+                                                                    background-color: black;
+                                                                }
+                                                                
+                                                                .footer-bar {
+                                                                    text-align: center;
+                                                                }
+                                                                
+                                                                .text-footer {
+                                                                    color: white;
+                                                                }
+                                                                
+                                                                .logos-footer {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                }
+                                                                
+                                                                .logo-footer-logo {
+                                                                    width: 50px;
+                                                                }
+                                                                /* -------------------------------------------------------------Modal---------------------------------------------------------------------- */
+                                                                
+                                                                .subtitulo {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                }
+                                                                
+                                                                .subtitulo-text {
+                                                                    color: #745E46;
+                                                                    font-weight: bold;
+                                                                    margin-top: 5vh;
+                                                                    margin-bottom: 5vh;
+                                                                    width: 100vw;
+                                                                }
+                                                                
+                                                                #buttom-seguinte {
+                                                                    background-color: transparent;
+                                                                    font-size: 1.5em;
+                                                                    margin-left: 60vw;
+                                                                    border: #745E46 solid;
+                                                                    text-decoration: none;
+                                                                    color: #745E46;
+                                                                }
+                                                                
+                                                                #buttom-seguinte:hover {
+                                                                    font-weight: bold;
+                                                                    text-decoration-line: none;
+                                                                    color: #745E46;
+                                                                }
+                                                                
+                                                                #buttom-seguinte01 {
+                                                                    background-color: transparent;
+                                                                    font-size: 1.5em;
+                                                                    margin-left: 60vw;
+                                                                    border: #745E46 solid;
+                                                                    text-decoration: none;
+                                                                    color: #745E46;
+                                                                }
+                                                                
+                                                                #buttom-seguinte01:hover {
+                                                                    font-weight: bold;
+                                                                    text-decoration-line: none;
+                                                                    color: #745E46;
+                                                                }
+                                                                
+                                                                label {
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    color: #745E46;
+                                                                }
+                                                                /* ----------------------------------------------------Media------------------------------------------------------------------------------------- */
+                                                                
+                                                                @media screen and (max-width:570px) {
+                                                                    .card {
+                                                                        margin-top: 0.3vh;
+                                                                    }
+                                                                    .titulo {
+                                                                        margin-top: 0.5vh;
+                                                                        margin-bottom: 0.5vh;
+                                                                        text-align: center;
+                                                                    }
+                                                                    .link-login {
+                                                                        height: 15vh;
+                                                                    }
+                                                                    .titulo-novaconta {
+                                                                        font-size: 1em;
+                                                                        height: 4vh;
+                                                                    }
+                                                                }
+                                                                
+                                                                @media screen and (max-height:800px) and (max-width:570px) {
+                                                                    .titulo-novaconta {
+                                                                        display: none;
+                                                                    }
+                                                                }
+                                                                
+                                                                @media screen and (max-height:700px) and (max-width:570px) {
+                                                                    .titulo-novaconta {
+                                                                        display: none;
+                                                                    }
+                                                                    .card {
+                                                                        height: 25vh;
+                                                                    }
+                                                                    .card-text {
+                                                                        font-size: 0.5em;
+                                                                    }
+                                                                    #buttom-seguinte {
+                                                                        font-size: 1em;
+                                                                    }
+                                                                }

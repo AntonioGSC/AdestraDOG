@@ -1,0 +1,575 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: #eedea3;
+    
+}
+
+.main{
+    width: 960px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+/*------------------  HEADER -----------------*/
+
+
+
+
+
+.logo-responsivo{
+    display: none;
+}
+
+.fixed-bar{
+    position: fixed;
+    width: 100%;
+    background-color: #f1e375;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    z-index: 10;
+}
+
+.logo{
+    width: 320px;
+}
+
+.imagem-logo{
+    width: 100%;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+.nav-bar ul li{
+    margin: 0em 1em;
+}
+
+.menu-item{
+    color: #735d45;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+}
+
+.menu-item-buscar{
+    color: #d06f25;
+}
+
+#menu-icon{
+    width: 25px;
+    margin-left: 5px;
+    fill: #735d45;
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 90px;
+    right: 0;
+    background-color: #f1e375; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.image-collapse{
+    width: 250px;
+}
+
+.logo-collapse{
+    width: 100%;
+}
+
+
+/*------------------  MAIN -----------------*/
+
+
+.container{
+    width: 100vw;
+    margin: 0 auto; 
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#eedea3;
+    padding-top: 3%;
+   
+}
+
+.QuemSomos{
+    width: 960px;
+    margin-top: 5%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: auto;
+    position: relative;
+}
+
+#beneficios{
+    text-align: center;
+    color: #f1e3b1;
+    font-weight: bolder;
+    font-size: 23px;
+    padding-bottom: 2%;
+}
+
+
+h3{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 1%;
+    
+}
+
+
+.marrom{
+    text-align: justify;
+    color: #745e46;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.white{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.filho3{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.botao1{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.myButton{
+    background:    #d07025;
+    border-radius: 11px;
+    padding:       3px 43px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 23px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    margin-bottom: 4%;  
+    margin-top: 2%;
+    box-shadow: 0 0 60px rgba(0, 0,0, 0.3);
+
+}
+
+
+.container2{
+    width: 100%;
+    margin: 0 auto; 
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d07025;
+    padding-bottom: 6%;
+
+
+}
+
+.preto{
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 3%;
+    background-color: #eedea3;
+   
+}
+
+
+.Depoimentos{
+    margin-top: 2%;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+
+.branco{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.cards-responsive{
+    width: 960px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    display: none;   
+      
+}
+
+.cards2{
+    width: 960px;
+    display: flex;
+    padding-left: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3%;   
+}
+
+.cards3{
+    width: 960px;
+    display: flex;
+    padding-left: 2%;
+    flex-direction: row;
+    justify-content: space-between;   
+    padding-top: 3%;   
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;    
+    perspective: 1000px; 
+}
+  
+ 
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+ 
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+  
+.flip-card-back {
+    background-color: #eedea3;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.card{
+    background-color: #eedea3;
+    box-shadow: 0 10px 40px rgba(0, 0,0, 0.4);
+}
+
+.foto{
+    justify-content: center;
+    align-self: center;
+
+}
+.persona{
+    border-radius: 1000px;
+      
+}
+
+
+.arroba{
+    padding-top: 10%;
+    font-weight: bolder;
+}
+.titulocard{
+    padding-top: 5%;
+    font-weight: bolder;
+    padding-bottom: 2%;
+    background-color:#eedea3;
+
+}
+
+.textocard{
+    font-weight: bolder;
+    color: #745e46;
+    text-align: center;
+    font-size: 15px;
+    
+    
+}
+
+#bottom{
+    padding-bottom: 2%;
+}
+
+
+.container3{
+    width: 100%;
+    margin: 0 auto; 
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#745e46;
+    padding-top: 3%;
+    padding-bottom: 5%;
+
+}
+
+.beneficio{
+    width: 960px;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: auto;
+    position: relative;
+}
+
+#beneficios{
+    text-align: center;
+    color: #f1e3b1;
+    font-weight: bolder;
+    font-size: 23px;
+    padding-bottom: 2%;
+}
+
+.white{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.filho3{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.myButton1{
+    background:    #d07025;
+    border-radius: 11px;
+    padding:       7px 48px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    box-shadow: 0 5px 60px rgba(0, 0,0, 0.4);
+    margin-top: 5%;
+}
+
+
+
+
+/*------------------  FOOTER -----------------*/
+
+
+
+footer{
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    padding-top: 2%;
+}
+
+.footer-bar{
+    text-align: center;
+}
+
+.text-footer{
+    color: white;
+}
+
+.logos-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer-logo{
+    width: 50px;
+}
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+
+  
+/************************ RESPONSIVE **********************/
+
+
+@media (max-width: 1000px){ 
+    .main{
+        width: 800px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 900px){ 
+    .QuemSomos{
+        width: 740px;
+        
+    }
+    .beneficio{
+        width: 740px;
+    }
+    .Depoimentos{
+        width: 740px;
+    }
+   
+}
+
+
+
+@media (max-width: 760px){ 
+
+    .logo{
+        display: none;
+    }
+
+    .logo-responsivo{
+        display: block;
+        width: 80px;
+    }
+
+    .sidebar {
+        top: 55px;
+    }
+
+    .menu-item{
+        font-size: 22px;
+    }
+    
+    .cadastrar-nav{
+        display: none;
+    }
+
+    .QuemSomos{
+        width: 100%;
+
+        
+    }
+
+    .QuemSomos .coluna2{
+        margin-top: 12%;
+    }
+    .QuemSomos .botao1{
+        display: none;
+    }
+   
+    .beneficio{
+        width: auto;
+    }
+    .Depoimentos{
+        width: auto;
+    }
+
+    .filho3{
+        padding:  7px 40px;
+    }
+     
+    .cards-responsive{
+        display: block !important;
+        padding-left: 40px;
+        
+    }
+
+    .cards2{
+        display: none;
+    }
+    .cards3{
+        display: none;
+    }
+
+    .img2{
+        display: none;
+    }
+
+    .img1{
+        display: none;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+
+    
+
+
+    
+}
+
+
