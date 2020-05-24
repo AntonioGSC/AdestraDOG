@@ -412,7 +412,9 @@ footer{
         top: 55px;
     }
 
-
+    footer{
+        font-size: 16px;
+    }
 
     .happy-dog{
         object-position: 70%;
