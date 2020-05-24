@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icon logo.png" class="icone-head">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/cadastro.css">
@@ -15,6 +16,11 @@
 <body>
     <header>
         <div class="fixed-bar">
+            <div class="logo-responsivo">
+                <a href="index.html" class="home-button">
+                    <h1><img class="imagem-logo" src="img/logo-onlycasa.png" alt="AdestraDog"></h1>
+                </a>
+            </div>
             <div class="logo">
                 <a href="index.html" class="home-button">
                     <h1><img class="imagem-logo" src="img/logo.png" alt="AdestraDog"></h1>
@@ -24,7 +30,7 @@
                 <ul>
                     <li><a class="menu-item menu-item-buscar" href="buscar.html">Buscar</a></li>
                     <li><a class="menu-item" href="sobre.html">Sobre</a></li>
-                    <li><a class="menu-item openbtn" onclick="openNav()" href="#">Cadastre-se/Login<div class="svg-icon"><svg
+                    <li><a class="menu-item openbtn" onclick="openNav()" href="#"><p class="cadastrar-nav">Cadastre-se/Login</p><div class="svg-icon"><svg
                   id="menu-icon" enable-background="new 0 0 512 512" viewBox="0 0 512 512" width="512"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -42,8 +48,7 @@
             <div class="image-collapse">
                 <img class="logo-collapse" src="img/logo-collapse.png" alt="logo-collapse" srcset="">
             </div>
-            <a href="cadastro.html">Quero Adestrar</a>
-            <a href="cadastro.html">Sou Adestrador</a>
+            <a href="cadastro.html">Cadastrar</a>
         </div>
     </header>
     <main>
@@ -51,13 +56,9 @@
             <div class="titulo">
                 <h1>Cadastre-se</h1>
             </div>
-
             <div class="link-login">
-                <div class="titulo-novaconta">
-                    <span>Caso já tenha uma conta faça login aqui</span>
-                </div>
                 <div class="conta-login">
-                    <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" id="link-login02">Login</a>
+                    <a type="button" class="btn button-login" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" id="link-login02">Caso tenha uma conta faça login aqui</a>
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">

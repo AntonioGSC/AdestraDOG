@@ -52,6 +52,11 @@ body{
     margin: 0em 1em;
 }
 
+.nav-bar ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .menu-item{
     color: #735d45;
     font-size: 25px;
@@ -81,11 +86,12 @@ body{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 40px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    text-align: center;
 }
   
   /* The sidebar links */
   .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -441,7 +447,6 @@ footer{
     padding: 10px;
     font-size: 20px;
     background-color: black;
-    padding-top: 2%;
 }
 
 .footer-bar{
@@ -455,15 +460,12 @@ footer{
 .logos-footer{
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .logo-footer-logo{
-    width: 50px;
+    width: 35px;
 }
-  a:hover {
-    color: black;
-    text-decoration: none;
-  }
   
 
   
@@ -481,7 +483,6 @@ footer{
 @media (max-width: 900px){ 
     .QuemSomos{
         width: 740px;
-        
     }
     .beneficio{
         width: 740px;
@@ -489,7 +490,21 @@ footer{
     .Depoimentos{
         width: 740px;
     }
-   
+    .cards-responsive{
+        display: block !important;
+    }
+    .cards2{
+        display: none;
+    }
+    .cards3{
+        display: none;
+    }
+    .flip-card{
+        margin: 0 auto;
+    }
+    .cadastrar-nav{
+        display: none;
+    }
 }
 
 
@@ -508,10 +523,6 @@ footer{
     .sidebar {
         top: 55px;
     }
-
-    .menu-item{
-        font-size: 22px;
-    }
     
     .cadastrar-nav{
         display: none;
@@ -519,8 +530,6 @@ footer{
 
     .QuemSomos{
         width: 100%;
-
-        
     }
 
     .QuemSomos .coluna2{
@@ -543,8 +552,6 @@ footer{
      
     .cards-responsive{
         display: block !important;
-        padding-left: 40px;
-        
     }
 
     .cards2{
@@ -566,10 +573,9 @@ footer{
         font-size: 16px;
     }
 
-    
-
-
-    
+    .flip-card{
+        margin: 0 auto;
+    }
 }
 
 

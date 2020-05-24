@@ -34,6 +34,7 @@
                                                                     justify-content: space-around;
                                                                     font-family: 'Montserrat Alternates', sans-serif;
                                                                     font-weight: bold;
+                                                                    margin-bottom: 0px;
                                                                 }
                                                                 
                                                                 .nav-bar ul li {
@@ -57,7 +58,10 @@
                                                                     fill: #735d45;
                                                                 }
                                                                 /* The sidebar menu */
-                                                                
+                                                                .cadastrar-nav{
+                                                                    margin-bottom: 0px;
+                                                                }
+
                                                                 .sidebar {
                                                                     height: 100%;
                                                                     /* 100% Full-height */
@@ -77,11 +81,12 @@
                                                                     /* Place content 60px from the top */
                                                                     transition: 0.5s;
                                                                     /* 0.5 second transition effect to slide in the sidebar */
+                                                                    text-align: center;
                                                                 }
                                                                 /* The sidebar links */
                                                                 
                                                                 .sidebar a {
-                                                                    padding: 8px 8px 8px 32px;
+                                                                    padding: 8px;
                                                                     text-decoration: none;
                                                                     font-size: 25px;
                                                                     color: #818181;
@@ -146,12 +151,12 @@
                                                                     color: #745E46;
                                                                     font-weight: bold;
                                                                     margin-top: 5vh;
-                                                                    margin-bottom: 5vh;
+                                                                    margin-bottom: 2vh;
                                                                 }
                                                                 
                                                                 .link-login {
                                                                     font-size: 15px;
-                                                                    height: 20vh;
+                                                                    height: 10vh;
                                                                 }
                                                                 
                                                                 #link {
@@ -257,27 +262,28 @@
                                                                 }
                                                                 /*----------------------------------------------------------------------------------------*/
                                                                 
-                                                                footer {
+                                                                footer{
                                                                     padding: 10px;
                                                                     font-size: 20px;
                                                                     background-color: black;
                                                                 }
                                                                 
-                                                                .footer-bar {
+                                                                .footer-bar{
                                                                     text-align: center;
                                                                 }
                                                                 
-                                                                .text-footer {
+                                                                .text-footer{
                                                                     color: white;
                                                                 }
                                                                 
-                                                                .logos-footer {
+                                                                .logos-footer{
                                                                     display: flex;
                                                                     justify-content: center;
+                                                                    margin-bottom: 10px;
                                                                 }
                                                                 
-                                                                .logo-footer-logo {
-                                                                    width: 50px;
+                                                                .logo-footer-logo{
+                                                                    width: 35px;
                                                                 }
                                                                 /* -------------------------------------------------------------Modal---------------------------------------------------------------------- */
                                                                 
@@ -328,8 +334,36 @@
                                                                     font-family: 'Roboto', sans-serif;
                                                                     color: #745E46;
                                                                 }
+
+                                                                .logo-responsivo{
+                                                                    display: none;
+                                                                }
                                                                 /* ----------------------------------------------------Media------------------------------------------------------------------------------------- */
                                                                 
+                                                                @media (max-width: 900px){ 
+                                                                    .cadastrar-nav{
+                                                                        display: none;
+                                                                    }
+                                                                    .svg-icon{
+                                                                        margin-top: 4px;
+                                                                    }
+                                                                } 
+
+                                                                @media (max-width: 760px){ 
+                                                                    .logo{
+                                                                        display: none;
+                                                                    }
+                                                                
+                                                                    .logo-responsivo{
+                                                                        display: block;
+                                                                        width: 80px;
+                                                                    }
+                                                                    #link-login02 {
+                                                                        width: 350px;
+                                                                        font-size: 15px;
+                                                                    }
+                                                                }
+
                                                                 @media screen and (max-width:570px) {
                                                                     .card {
                                                                         margin-top: 0.3vh;
@@ -344,7 +378,7 @@
                                                                     }
                                                                     .titulo-novaconta {
                                                                         font-size: 1em;
-                                                                        height: 4vh;
+                                                                        height: 6vh;
                                                                     }
                                                                 }
                                                                 
