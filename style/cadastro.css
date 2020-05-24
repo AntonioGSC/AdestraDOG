@@ -362,8 +362,8 @@
                                                                         width: 350px;
                                                                         font-size: 15px;
                                                                     }
-                                                                    footer{
-                                                                        font-size: 16px;
+                                                                    .card-text {
+                                                                        font-size: 0.7em;
                                                                     }
                                                                 }
 
@@ -397,9 +397,7 @@
                                                                     }
                                                                     .card {
                                                                         height: 25vh;
-                                                                    }
-                                                                    .card-text {
-                                                                        font-size: 0.5em;
+                                                                        margin-bottom: 20px;
                                                                     }
                                                                     #buttom-seguinte {
                                                                         font-size: 1em;
