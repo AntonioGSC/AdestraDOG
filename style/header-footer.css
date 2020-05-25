@@ -146,3 +146,35 @@ footer{
 .logo-footer-logo{
     width: 35px;
 }
+
+@media (max-width: 1400px) {
+    footer{
+        clear: both;
+        position: relative;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 900px){ 
+    .cadastrar-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 760px){ 
+    .logo{
+        display: none;
+    }
+
+    .logo-responsivo{
+        display: block;
+        width: 80px;
+    }
+
+    .sidebar {
+        top: 55px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
