@@ -1,5 +1,7 @@
 /* first page: image + search bar */
 
+body, html { overflow-x:hidden; }
+
 .search-container {
     width: 100%;
     position: relative;
