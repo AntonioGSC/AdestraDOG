@@ -365,6 +365,9 @@
                                                                     .card-text {
                                                                         font-size: 0.7em;
                                                                     }
+                                                                    footer{
+                                                                        font-size: 15px;
+                                                                    }
                                                                 }
 
                                                                 @media screen and (max-width:570px) {
