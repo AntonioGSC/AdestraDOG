@@ -1,6 +1,5 @@
 /* first page: image + search bar */
 
-body, html { overflow-x:hidden; }
 
 .search-container {
     width: 100%;
@@ -420,7 +419,7 @@ footer {
     }
 
     .center-profile {
-        width: 500px;
+        width: 510px;
         margin-left: 1em;
         
     }
