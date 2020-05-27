@@ -439,7 +439,15 @@ h3{
     margin-top: 5%;
 }
 
+.myButton:hover{
+    text-decoration: none;
+    color: black;
+}
 
+.myButton1:hover{
+    text-decoration: none;
+    color: black;
+}
 
 
 /*------------------  FOOTER -----------------*/
