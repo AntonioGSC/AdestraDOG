@@ -5,6 +5,7 @@ window.addEventListener("scroll", function(){
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if(scrollTop > lastScrollTop){
     navbar.style.top="-70px";
+    document.getElementById("mySidebar").style.width = "0";
   }
   else{
     navbar.style.top="0";

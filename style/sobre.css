@@ -82,6 +82,7 @@ body{
 
 /* The sidebar menu */
 .sidebar {
+    font-family: 'Montserrat', sans-serif;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -101,8 +102,88 @@ body{
     text-decoration: none;
     font-size: 25px;
     color: #818181;
+    transition: 0.3s;
+  }
+
+  .sidebar p {
+    padding: 2px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #735d45;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
+  .sidebar h5{
+    padding: 8px 12px 8px 8px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #735d45;
     display: block;
     transition: 0.3s;
+    font-weight: bold;
+  }
+
+  .sidebar label{
+    padding: 2px 8px 0px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #735d45;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+  }
+
+  .sidebar .input-padrao{
+    padding: 8px 4px;
+    width: 90%;
+    margin: 0 16px;
+    text-align: left;
+    color: #735d45;
+    border: 3px solid #d06f25;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+  }
+
+  .sidebar .button-entrar{
+        background:    #d07025;
+        padding:       3px 45px;
+        display:       inline-block;
+        text-align:    center; 
+        box-shadow: 0 0 5px #d07025;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 8px;
+    }
+
+    .sidebar .button-nav:hover{
+        background: #735d45;
+        cursor: pointer;
+        transition: 0.7s all;
+        transform: scale(1.1);
+    }
+
+    .sidebar .button-cadastrar{
+        background:    #d07025;
+        padding: 2px 6px;
+        text-align:    center; 
+        box-shadow: 0 0 5px #d07025;
+        color: white;
+        font-weight: 1000;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+  .sidebar .input-padrao::placeholder{
+      color: #735d45;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -124,8 +205,9 @@ body{
     cursor: pointer;
     background-color: transparent;
     border: none;
-}
+  }
   
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
@@ -533,6 +615,7 @@ footer{
     }
 
     .logo-responsivo{
+        margin-top: 5px;
         display: block;
         width: 80px;
     }
