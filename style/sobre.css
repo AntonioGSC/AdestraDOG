@@ -18,10 +18,6 @@ body{
 
 /*------------------  HEADER -----------------*/
 
-
-
-
-
 .logo-responsivo{
     display: none;
 }
@@ -29,14 +25,17 @@ body{
 .fixed-bar{
     position: fixed;
     width: 100%;
+    height: 70px;
     background-color: #f1e375;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     z-index: 10;
+    transition: 0.5s;
 }
 
 .logo{
+    margin-top: 5px;
     width: 320px;
 }
 
@@ -44,18 +43,22 @@ body{
     width: 100%;
 }
 
-.nav-bar ul{
+.nav-bar-self{
+    margin-top: 30px;
+}
+
+.nav-bar-self ul{
     display: flex;
     justify-content: space-around;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bold;
 }
 
-.nav-bar ul li{
+.nav-bar-self ul li{
     margin: 0em 1em;
 }
 
-.nav-bar ul li a:hover {
+.nav-bar-self ul li a:hover {
     color: black;
     text-decoration: none;
 }
@@ -83,7 +86,7 @@ body{
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 90px;
+    top: 60px;
     right: 0;
     background-color: #f1e375; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -515,6 +518,9 @@ footer{
     }
     .cadastrar-nav{
         display: none;
+    }
+    .nav-bar-self{
+        margin-top: 15px;
     }
 }
 

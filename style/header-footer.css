@@ -15,6 +15,8 @@
     justify-content: space-around;
     align-items: center;
     z-index: 10;
+    height: 70px;
+    transition: 0.5s;
 }
 
 .logo{
@@ -64,7 +66,7 @@
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 90px;
+    top: 60px;
     right: 0;
     background-color: #f1e375; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */

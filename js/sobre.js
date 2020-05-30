@@ -1,3 +1,17 @@
+let lastScrollTop = 0;
+let navbar = document.getElementById("nav-hide")
+
+window.addEventListener("scroll", function(){
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if(scrollTop > lastScrollTop){
+    navbar.style.top="-70px";
+  }
+  else{
+    navbar.style.top="0";
+  }
+  lastScrollTop = scrollTop
+});
+
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";

@@ -10,6 +10,8 @@
                                                                     display: flex;
                                                                     justify-content: space-around;
                                                                     align-items: center;
+                                                                    height: 70px;
+                                                                    transition: 0.5s;
                                                                 }
                                                                 
                                                                 .nav-bar ul li a:hover {
@@ -71,7 +73,7 @@
                                                                     /* Stay in place */
                                                                     z-index: 1;
                                                                     /* Stay on top */
-                                                                    top: 90px;
+                                                                    top: 60px;
                                                                     right: 0;
                                                                     background-color: #f1e375;
                                                                     /* Black*/
