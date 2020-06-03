@@ -245,7 +245,7 @@ function insertForm() {
 </div>
 
 <div class="form-group col-md-12 col-sm-6">
-    <button type="button" onclick="removeDog([dogId])">
+    <button type="button" onclick="removeDog([dogId])" class="delete">
         <span class="material-icons">
             delete
         </span>
@@ -300,7 +300,7 @@ function insertEscolar() {
                 </div>
             </div>
             <div class="form-group col-md-12 col-sm-12">
-                <button type="button" onclick="removeNivel([nivel-Id])">
+                <button type="button" onclick="removeNivel([nivel-Id])" class="delete">
                     <span class="material-icons">
                         delete
                     </span>
@@ -318,4 +318,77 @@ function insertEscolar() {
 
 function removeNivel(idNivelEscolar) {
     $(`#nivel-${idNivelEscolar}`).remove();
+}
+// ===================================================Certifições===============================================
+let idCertificado = 1;
+let buttonCertificado = document.getElementById('plus03');
+let evento03 = buttonCertificado.addEventListener('click', function() {
+    insertCertificado();
+});
+
+function insertCertificado() {
+    let html03 =
+        `<div id="certificado-[certificado-Id]">
+        <div class="form-row">
+          <div class="form-group col-md-12 col-sm-12">
+             <label for="select-cursos11">Certificações</label>
+             <input type="text" class="form-control" id="Certificacoes" placeholder="Ex.:Educação do seu dog" required>
+         </div>
+        </div>
+        </div>
+            <div class="form-group col-md-12 col-sm-12">
+                <button type="button" onclick="removeCertificado([certificado-Id])" class="delete">
+                    <span class="material-icons">
+                        delete
+                    </span>
+                </button>
+            </div>
+        </div>
+    
+
+`;
+
+    html03 = html03.split("[certificado-Id]").join(idCertificado);
+    $(".certificado-input").append(html03);
+    idCertificado++;
+}
+
+function removeCertificado(idCertificado) {
+    $(`#certificado-${idCertificado}`).remove();
+}
+// ===================================================Experiencias===============================================
+let idExperiencia = 1;
+let buttonExp = document.getElementById('plus04');
+let evento04 = buttonExp.addEventListener('click', function() {
+    insertExp();
+});
+
+function insertExp() {
+    let html04 =
+        `<div id="exp-[exp-Id]">
+        <div class="form-row">
+            <div class="form-group col-md-12 col-sm-12">
+                <label for="experiencia">Experiência </label>
+                <input type="text" class="form-control" id="experiencia" placeholder="Ex.: Babá de dog" required>
+            </div>
+        </div>
+        <div class="form-group col-md-12 col-sm-12">
+                <button type="button" onclick="removeExp([exp-Id])" class="delete">
+                    <span class="material-icons">
+                        delete
+                    </span>
+                </button>
+        </div>
+        </div>
+    
+
+`;
+
+    html04 = html04.split("[exp-Id]").join(idExperiencia);
+    $(".experiencia-select").append(html04);
+    idExperiencia++;
+}
+
+function removeExp(idExperiencia) {
+    $(`#exp-${idExperiencia}`).remove();
 }

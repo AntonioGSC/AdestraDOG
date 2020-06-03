@@ -1,497 +1,571 @@
-                                                                * {
-                                                                    box-sizing: border-box;
-                                                                    font-family: 'Montserrat', sans-serif;
-                                                                }
-                                                                
-                                                                .fixed-bar {
-                                                                    position: fixed;
-                                                                    width: 100%;
-                                                                    background-color: #f1e375;
-                                                                    display: flex;
-                                                                    justify-content: space-around;
-                                                                    align-items: center;
-                                                                    height: 70px;
-                                                                    transition: 0.5s;
-                                                                }
-                                                                
-                                                                .nav-bar ul li a:hover {
-                                                                    color: black;
-                                                                    text-decoration: none;
-                                                                }
-                                                                
-                                                                .menu-item:hover {
-                                                                    color: black;
-                                                                }
-                                                                
-                                                                .logo {
-                                                                    margin-top: 5px;
-                                                                    width: 320px;
-                                                                }
-                                                                
-                                                                .imagem-logo {
-                                                                    width: 100%;
-                                                                }
-                                                                
-                                                                .nav-bar ul {
-                                                                    display: flex;
-                                                                    justify-content: space-around;
-                                                                    font-family: 'Montserrat Alternates', sans-serif;
-                                                                    font-weight: bold;
-                                                                    margin-bottom: 0px;
-                                                                }
-                                                                
-                                                                .nav-bar ul li {
-                                                                    margin: 0em 1em;
-                                                                }
-                                                                
-                                                                .menu-item {
-                                                                    color: #735d45;
-                                                                    font-size: 25px;
-                                                                    text-decoration: none;
-                                                                    display: flex;
-                                                                }
-                                                                
-                                                                .menu-item-buscar {
-                                                                    color: #d06f25;
-                                                                }
-                                                                
-                                                                #menu-icon {
-                                                                    width: 25px;
-                                                                    margin-left: 5px;
-                                                                    fill: #735d45;
-                                                                }
-                                                                
-                                                                .svg-icon {
-                                                                    margin-top: 4px;
-                                                                }
-                                                                /* The sidebar menu */
-                                                                
-                                                                .cadastrar-nav {
-                                                                    margin-bottom: 0px;
-                                                                }
-                                                                
-                                                                .sidebar {
-                                                                    font-family: 'Montserrat', sans-serif;
-                                                                    height: 100%;
-                                                                    /* 100% Full-height */
-                                                                    width: 0;
-                                                                    /* 0 width - change this with JavaScript */
-                                                                    position: fixed;
-                                                                    /* Stay in place */
-                                                                    z-index: 1;
-                                                                    /* Stay on top */
-                                                                    top: 60px;
-                                                                    right: 0;
-                                                                    background-color: #f1e375;
-                                                                    /* Black*/
-                                                                    overflow-x: hidden;
-                                                                    /* Disable horizontal scroll */
-                                                                    padding-top: 40px;
-                                                                    /* Place content 60px from the top */
-                                                                    transition: 0.5s;
-                                                                    /* 0.5 second transition effect to slide in the sidebar */
-                                                                    text-align: center;
-                                                                }
-                                                                /* The sidebar links */
-                                                                
-                                                                .sidebar a {
-                                                                    padding: 8px;
-                                                                    text-decoration: none;
-                                                                    font-size: 25px;
-                                                                    color: #818181;
-                                                                    transition: 0.3s;
-                                                                }
-                                                                
-                                                                .sidebar p {
-                                                                    padding: 2px;
-                                                                    margin-top: 25px;
-                                                                    text-decoration: none;
-                                                                    font-size: 12px;
-                                                                    color: #735d45;
-                                                                    transition: 0.3s;
-                                                                    font-weight: bold;
-                                                                }
-                                                                
-                                                                .sidebar h5 {
-                                                                    padding: 8px 12px 8px 8px;
-                                                                    text-decoration: none;
-                                                                    font-size: 28px;
-                                                                    color: #735d45;
-                                                                    display: block;
-                                                                    transition: 0.3s;
-                                                                    font-weight: bold;
-                                                                }
-                                                                
-                                                                .sidebar label {
-                                                                    padding: 2px 8px 0px 16px;
-                                                                    text-decoration: none;
-                                                                    font-size: 22px;
-                                                                    color: #735d45;
-                                                                    display: block;
-                                                                    transition: 0.3s;
-                                                                    text-align: left;
-                                                                }
-                                                                
-                                                                .sidebar .input-padrao {
-                                                                    padding: 8px 4px;
-                                                                    width: 90%;
-                                                                    margin: 0 16px;
-                                                                    text-align: left;
-                                                                    color: #735d45;
-                                                                    border: 3px solid #d06f25;
-                                                                    border-radius: 10px;
-                                                                    font-size: 16px;
-                                                                    margin-top: -8px;
-                                                                    margin-bottom: 8px;
-                                                                    font-weight: bolder;
-                                                                }
-                                                                
-                                                                .sidebar .button-entrar {
-                                                                    background: #d07025;
-                                                                    padding: 3px 45px;
-                                                                    display: inline-block;
-                                                                    text-align: center;
-                                                                    box-shadow: 0 0 5px #d07025;
-                                                                    color: white;
-                                                                    font-weight: bold;
-                                                                    font-size: 18px;
-                                                                    border: none;
-                                                                    border-radius: 10px;
-                                                                    margin-top: 8px;
-                                                                }
-                                                                
-                                                                .sidebar .button-nav:hover {
-                                                                    background: #735d45;
-                                                                    cursor: pointer;
-                                                                    transition: 0.7s all;
-                                                                    transform: scale(1.1);
-                                                                }
-                                                                
-                                                                .sidebar .button-cadastrar {
-                                                                    background: #d07025;
-                                                                    padding: 2px 6px;
-                                                                    text-align: center;
-                                                                    box-shadow: 0 0 5px #d07025;
-                                                                    color: white;
-                                                                    font-weight: 1000;
-                                                                    border: none;
-                                                                    border-radius: 5px;
-                                                                    font-size: 14px;
-                                                                }
-                                                                
-                                                                .sidebar .input-padrao::placeholder {
-                                                                    color: #735d45;
-                                                                }
-                                                                /* When you mouse over the navigation links, change their color */
-                                                                
-                                                                .sidebar a:hover {
-                                                                    color: #f1f1f1;
-                                                                }
-                                                                /* Position and style the close button (top right corner) */
-                                                                
-                                                                .sidebar .closebtn {
-                                                                    position: absolute;
-                                                                    top: 0;
-                                                                    right: 25px;
-                                                                    font-size: 36px;
-                                                                    margin-left: 50px;
-                                                                }
-                                                                /* The button used to open the sidebar */
-                                                                
-                                                                .openbtn {
-                                                                    cursor: pointer;
-                                                                    background-color: transparent;
-                                                                    border: none;
-                                                                }
-                                                                /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-                                                                
-                                                                @media screen and (max-height: 450px) {
-                                                                    .sidebar {
-                                                                        padding-top: 15px;
-                                                                    }
-                                                                    .sidebar a {
-                                                                        font-size: 18px;
-                                                                    }
-                                                                }
-                                                                
-                                                                .image-collapse {
-                                                                    width: 250px;
-                                                                }
-                                                                
-                                                                .logo-collapse {
-                                                                    width: 100%;
-                                                                }
-                                                                /*----------------------------------------------------------------------------------------*/
-                                                                
-                                                                body {
-                                                                    background-color: #EEDEA3;
-                                                                    height: 100vh;
-                                                                }
-                                                                
-                                                                .container {
-                                                                    width: 90vw;
-                                                                    /* width: 960px; */
-                                                                    height: 100vh;
-                                                                    margin: 0 auto;
-                                                                    padding: 95px 0 30px;
-                                                                }
-                                                                
-                                                                .titulo {
-                                                                    color: #745E46;
-                                                                    font-weight: bold;
-                                                                    margin-top: 5vh;
-                                                                    margin-bottom: 2vh;
-                                                                }
-                                                                
-                                                                .link-login {
-                                                                    font-size: 15px;
-                                                                    height: 13vh;
-                                                                }
-                                                                
-                                                                #link {
-                                                                    background-color: transparent;
-                                                                    color: #999999;
-                                                                }
-                                                                
-                                                                #link:hover {
-                                                                    text-decoration-line: underline;
-                                                                    font-weight: bold;
-                                                                }
-                                                                
-                                                                #Botao-entrar {
-                                                                    border: #D07025;
-                                                                    font-family: system-ui;
-                                                                    font-size: 16px;
-                                                                    background-color: #D07025;
-                                                                    color: #fff;
-                                                                }
-                                                                
-                                                                #Botao-entrar:hover {
-                                                                    background-color: #FCB631;
-                                                                    font-weight: bold;
-                                                                }
-                                                                
-                                                                .modal-title {
-                                                                    font-family: 'Roboto', sans-serif;
-                                                                    color: #745E46;
-                                                                }
-                                                                
-                                                                .col-form-label {
-                                                                    font-family: 'Roboto', sans-serif;
-                                                                    color: #745E46;
-                                                                }
-                                                                
-                                                                .titulo-novaconta h4 {
-                                                                    color: #D07025;
-                                                                    text-align: center;
-                                                                    font-family: 'Roboto', sans-serif;
-                                                                    font-size: 2.2em;
-                                                                }
-                                                                
-                                                                .titulo-novaconta {
-                                                                    color: #745E46;
-                                                                    font-weight: bold;
-                                                                    text-align: center;
-                                                                    height: 6vh;
-                                                                }
-                                                                
-                                                                .card {
-                                                                    background-color: #D07025;
-                                                                    box-sizing: border-box;
-                                                                    margin-top: 5vh;
-                                                                }
-                                                                
-                                                                .row {
-                                                                    height: 50vh;
-                                                                }
-                                                                
-                                                                .conta-login {
-                                                                    display: flex;
-                                                                    justify-content: center;
-                                                                }
-                                                                
-                                                                #link-login02 {
-                                                                    border: #D07025;
-                                                                    text-align: center;
-                                                                    cursor: pointer;
-                                                                    padding: 1rem 3rem;
-                                                                    display: inline-block;
-                                                                    border-radius: 3px;
-                                                                    margin: 1rem;
-                                                                    text-decoration: none;
-                                                                    font-family: system-ui;
-                                                                    font-size: 16px;
-                                                                    background-color: #D07025;
-                                                                    color: #fff;
-                                                                }
-                                                                
-                                                                #link-login02:hover {
-                                                                    background-color: #FCB631;
-                                                                    font-weight: bold;
-                                                                }
-                                                                
-                                                                #botao_cadastro1 {
-                                                                    background-color: #745E46;
-                                                                    color: #f1f1f1;
-                                                                }
-                                                                
-                                                                #botao_cadastro1:hover {
-                                                                    background-color: #FCB631;
-                                                                    font-weight: bold;
-                                                                }
-                                                                
-                                                                #botao_cadastro02 {
-                                                                    background-color: #745E46;
-                                                                    color: #f1f1f1;
-                                                                }
-                                                                
-                                                                #botao_cadastro02:hover {
-                                                                    background-color: #FCB631;
-                                                                    font-weight: bold;
-                                                                }
-                                                                /*----------------------------------------------------------------------------------------*/
-                                                                
-                                                                footer {
-                                                                    padding: 10px;
-                                                                    font-size: 20px;
-                                                                    background-color: black;
-                                                                }
-                                                                
-                                                                .footer-bar {
-                                                                    text-align: center;
-                                                                }
-                                                                
-                                                                .text-footer {
-                                                                    color: white;
-                                                                }
-                                                                
-                                                                .logos-footer {
-                                                                    display: flex;
-                                                                    justify-content: center;
-                                                                    margin-bottom: 10px;
-                                                                }
-                                                                
-                                                                .logo-footer-logo {
-                                                                    width: 35px;
-                                                                }
-                                                                /* -------------------------------------------------------------Modal---------------------------------------------------------------------- */
-                                                                
-                                                                .subtitulo {
-                                                                    display: flex;
-                                                                    align-items: center;
-                                                                }
-                                                                
-                                                                .subtitulo-text {
-                                                                    color: #745E46;
-                                                                    font-weight: bold;
-                                                                    margin-top: 5vh;
-                                                                    margin-bottom: 5vh;
-                                                                    width: 100vw;
-                                                                }
-                                                                
-                                                                #buttom-seguinte {
-                                                                    background-color: transparent;
-                                                                    font-size: 1.5em;
-                                                                    margin-left: 60vw;
-                                                                    border: #745E46 solid;
-                                                                    text-decoration: none;
-                                                                    color: #745E46;
-                                                                }
-                                                                
-                                                                #buttom-seguinte:hover {
-                                                                    font-weight: bold;
-                                                                    text-decoration-line: none;
-                                                                    color: #745E46;
-                                                                }
-                                                                
-                                                                #buttom-seguinte01 {
-                                                                    background-color: transparent;
-                                                                    font-size: 1.5em;
-                                                                    margin-left: 60vw;
-                                                                    border: #745E46 solid;
-                                                                    text-decoration: none;
-                                                                    color: #745E46;
-                                                                }
-                                                                
-                                                                #buttom-seguinte01:hover {
-                                                                    font-weight: bold;
-                                                                    text-decoration-line: none;
-                                                                    color: #745E46;
-                                                                }
-                                                                
-                                                                label {
-                                                                    font-family: 'Roboto', sans-serif;
-                                                                    color: #745E46;
-                                                                }
-                                                                
-                                                                .logo-responsivo {
-                                                                    display: none;
-                                                                }
-                                                                /* ----------------------------------------------------Media------------------------------------------------------------------------------------- */
-                                                                
-                                                                @media (max-width: 900px) {
-                                                                    .cadastrar-nav {
-                                                                        display: none;
-                                                                    }
-                                                                    .svg-icon {
-                                                                        margin-top: 4px;
-                                                                    }
-                                                                }
-                                                                
-                                                                @media (max-width: 760px) {
-                                                                    .logo {
-                                                                        display: none;
-                                                                    }
-                                                                    .logo-responsivo {
-                                                                        margin-top: 5px;
-                                                                        display: block;
-                                                                        width: 80px;
-                                                                    }
-                                                                    #link-login02 {
-                                                                        width: 350px;
-                                                                        font-size: 15px;
-                                                                    }
-                                                                    .card-text {
-                                                                        font-size: 0.7em;
-                                                                    }
-                                                                    footer {
-                                                                        font-size: 15px;
-                                                                    }
-                                                                }
-                                                                
-                                                                @media screen and (max-width:570px) {
-                                                                    .card {
-                                                                        margin-top: 0.3vh;
-                                                                    }
-                                                                    .titulo {
-                                                                        margin-top: 0.5vh;
-                                                                        margin-bottom: 0.5vh;
-                                                                        text-align: center;
-                                                                    }
-                                                                    .link-login {
-                                                                        height: 15vh;
-                                                                    }
-                                                                    .titulo-novaconta {
-                                                                        font-size: 1em;
-                                                                        height: 6vh;
-                                                                    }
-                                                                }
-                                                                
-                                                                @media screen and (max-height:800px) and (max-width:570px) {
-                                                                    .titulo-novaconta {
-                                                                        display: none;
-                                                                    }
-                                                                }
-                                                                
-                                                                @media screen and (max-height:700px) and (max-width:570px) {
-                                                                    .titulo-novaconta {
-                                                                        display: none;
-                                                                    }
-                                                                    .card {
-                                                                        height: 25vh;
-                                                                        margin-bottom: 20px;
-                                                                    }
-                                                                    #buttom-seguinte {
-                                                                        font-size: 1em;
-                                                                    }
-                                                                }
+                                                                        * {
+                                                                            box-sizing: border-box;
+                                                                            font-family: 'Montserrat', sans-serif;
+                                                                        }
+                                                                        
+                                                                        .fixed-bar {
+                                                                            position: fixed;
+                                                                            width: 100%;
+                                                                            background-color: #f1e375;
+                                                                            display: flex;
+                                                                            justify-content: space-around;
+                                                                            align-items: center;
+                                                                            height: 70px;
+                                                                            transition: 0.5s;
+                                                                        }
+                                                                        
+                                                                        .nav-bar ul li a:hover {
+                                                                            color: black;
+                                                                            text-decoration: none;
+                                                                        }
+                                                                        
+                                                                        .menu-item:hover {
+                                                                            color: black;
+                                                                        }
+                                                                        
+                                                                        .logo {
+                                                                            margin-top: 5px;
+                                                                            width: 320px;
+                                                                        }
+                                                                        
+                                                                        .imagem-logo {
+                                                                            width: 100%;
+                                                                        }
+                                                                        
+                                                                        .nav-bar ul {
+                                                                            display: flex;
+                                                                            justify-content: space-around;
+                                                                            font-family: 'Montserrat Alternates', sans-serif;
+                                                                            font-weight: bold;
+                                                                            margin-bottom: 0px;
+                                                                        }
+                                                                        
+                                                                        .nav-bar ul li {
+                                                                            margin: 0em 1em;
+                                                                        }
+                                                                        
+                                                                        .menu-item {
+                                                                            color: #735d45;
+                                                                            font-size: 25px;
+                                                                            text-decoration: none;
+                                                                            display: flex;
+                                                                        }
+                                                                        
+                                                                        .menu-item-buscar {
+                                                                            color: #d06f25;
+                                                                        }
+                                                                        
+                                                                        #menu-icon {
+                                                                            width: 25px;
+                                                                            margin-left: 5px;
+                                                                            fill: #735d45;
+                                                                        }
+                                                                        
+                                                                        .svg-icon {
+                                                                            margin-top: 4px;
+                                                                        }
+                                                                        /* The sidebar menu */
+                                                                        
+                                                                        .cadastrar-nav {
+                                                                            margin-bottom: 0px;
+                                                                        }
+                                                                        
+                                                                        .sidebar {
+                                                                            font-family: 'Montserrat', sans-serif;
+                                                                            height: 100%;
+                                                                            /* 100% Full-height */
+                                                                            width: 0;
+                                                                            /* 0 width - change this with JavaScript */
+                                                                            position: fixed;
+                                                                            /* Stay in place */
+                                                                            z-index: 1;
+                                                                            /* Stay on top */
+                                                                            top: 60px;
+                                                                            right: 0;
+                                                                            background-color: #f1e375;
+                                                                            /* Black*/
+                                                                            overflow-x: hidden;
+                                                                            /* Disable horizontal scroll */
+                                                                            padding-top: 40px;
+                                                                            /* Place content 60px from the top */
+                                                                            transition: 0.5s;
+                                                                            /* 0.5 second transition effect to slide in the sidebar */
+                                                                            text-align: center;
+                                                                        }
+                                                                        /* The sidebar links */
+                                                                        
+                                                                        .sidebar a {
+                                                                            padding: 8px;
+                                                                            text-decoration: none;
+                                                                            font-size: 25px;
+                                                                            color: #818181;
+                                                                            transition: 0.3s;
+                                                                        }
+                                                                        
+                                                                        .sidebar p {
+                                                                            padding: 2px;
+                                                                            margin-top: 25px;
+                                                                            text-decoration: none;
+                                                                            font-size: 12px;
+                                                                            color: #735d45;
+                                                                            transition: 0.3s;
+                                                                            font-weight: bold;
+                                                                        }
+                                                                        
+                                                                        .sidebar h5 {
+                                                                            padding: 8px 12px 8px 8px;
+                                                                            text-decoration: none;
+                                                                            font-size: 28px;
+                                                                            color: #735d45;
+                                                                            display: block;
+                                                                            transition: 0.3s;
+                                                                            font-weight: bold;
+                                                                        }
+                                                                        
+                                                                        .sidebar label {
+                                                                            padding: 2px 8px 0px 16px;
+                                                                            text-decoration: none;
+                                                                            font-size: 22px;
+                                                                            color: #735d45;
+                                                                            display: block;
+                                                                            transition: 0.3s;
+                                                                            text-align: left;
+                                                                        }
+                                                                        
+                                                                        .sidebar .input-padrao {
+                                                                            padding: 8px 4px;
+                                                                            width: 90%;
+                                                                            margin: 0 16px;
+                                                                            text-align: left;
+                                                                            color: #735d45;
+                                                                            border: 3px solid #d06f25;
+                                                                            border-radius: 10px;
+                                                                            font-size: 16px;
+                                                                            margin-top: -8px;
+                                                                            margin-bottom: 8px;
+                                                                            font-weight: bolder;
+                                                                        }
+                                                                        
+                                                                        .sidebar .button-entrar {
+                                                                            background: #d07025;
+                                                                            padding: 3px 45px;
+                                                                            display: inline-block;
+                                                                            text-align: center;
+                                                                            box-shadow: 0 0 5px #d07025;
+                                                                            color: white;
+                                                                            font-weight: bold;
+                                                                            font-size: 18px;
+                                                                            border: none;
+                                                                            border-radius: 10px;
+                                                                            margin-top: 8px;
+                                                                        }
+                                                                        
+                                                                        .sidebar .button-nav:hover {
+                                                                            background: #735d45;
+                                                                            cursor: pointer;
+                                                                            transition: 0.7s all;
+                                                                            transform: scale(1.1);
+                                                                        }
+                                                                        
+                                                                        .sidebar .button-cadastrar {
+                                                                            background: #d07025;
+                                                                            padding: 2px 6px;
+                                                                            text-align: center;
+                                                                            box-shadow: 0 0 5px #d07025;
+                                                                            color: white;
+                                                                            font-weight: 1000;
+                                                                            border: none;
+                                                                            border-radius: 5px;
+                                                                            font-size: 14px;
+                                                                        }
+                                                                        
+                                                                        .sidebar .input-padrao::placeholder {
+                                                                            color: #735d45;
+                                                                        }
+                                                                        /* When you mouse over the navigation links, change their color */
+                                                                        
+                                                                        .sidebar a:hover {
+                                                                            color: #f1f1f1;
+                                                                        }
+                                                                        /* Position and style the close button (top right corner) */
+                                                                        
+                                                                        .sidebar .closebtn {
+                                                                            position: absolute;
+                                                                            top: 0;
+                                                                            right: 25px;
+                                                                            font-size: 36px;
+                                                                            margin-left: 50px;
+                                                                        }
+                                                                        /* The button used to open the sidebar */
+                                                                        
+                                                                        .openbtn {
+                                                                            cursor: pointer;
+                                                                            background-color: transparent;
+                                                                            border: none;
+                                                                        }
+                                                                        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                                                                        
+                                                                        @media screen and (max-height: 450px) {
+                                                                            .sidebar {
+                                                                                padding-top: 15px;
+                                                                            }
+                                                                            .sidebar a {
+                                                                                font-size: 18px;
+                                                                            }
+                                                                        }
+                                                                        
+                                                                        .image-collapse {
+                                                                            width: 250px;
+                                                                        }
+                                                                        
+                                                                        .logo-collapse {
+                                                                            width: 100%;
+                                                                        }
+                                                                        /*----------------------------------------------------------------------------------------*/
+                                                                        
+                                                                        body {
+                                                                            background-color: #EEDEA3;
+                                                                            height: 100vh;
+                                                                        }
+                                                                        
+                                                                        .container {
+                                                                            width: 90vw;
+                                                                            /* width: 960px; */
+                                                                            height: 100vh;
+                                                                            margin: 0 auto;
+                                                                            padding: 95px 0 30px;
+                                                                        }
+                                                                        
+                                                                        .titulo {
+                                                                            color: #745E46;
+                                                                            font-weight: bold;
+                                                                            margin-top: 5vh;
+                                                                            margin-bottom: 2vh;
+                                                                        }
+                                                                        
+                                                                        .link-login {
+                                                                            font-size: 15px;
+                                                                            height: 13vh;
+                                                                        }
+                                                                        
+                                                                        #link {
+                                                                            background-color: transparent;
+                                                                            color: #999999;
+                                                                        }
+                                                                        
+                                                                        #link:hover {
+                                                                            text-decoration-line: underline;
+                                                                            font-weight: bold;
+                                                                        }
+                                                                        
+                                                                        #Botao-entrar {
+                                                                            border: #D07025;
+                                                                            font-family: system-ui;
+                                                                            font-size: 16px;
+                                                                            background-color: #D07025;
+                                                                            color: #fff;
+                                                                        }
+                                                                        
+                                                                        #Botao-entrar:hover {
+                                                                            background-color: #FCB631;
+                                                                            font-weight: bold;
+                                                                        }
+                                                                        
+                                                                        .modal-title {
+                                                                            font-family: 'Roboto', sans-serif;
+                                                                            color: #745E46;
+                                                                        }
+                                                                        
+                                                                        .col-form-label {
+                                                                            font-family: 'Roboto', sans-serif;
+                                                                            color: #745E46;
+                                                                        }
+                                                                        
+                                                                        .titulo-novaconta h4 {
+                                                                            color: #D07025;
+                                                                            text-align: center;
+                                                                            font-family: 'Roboto', sans-serif;
+                                                                            font-size: 2.2em;
+                                                                        }
+                                                                        
+                                                                        .titulo-novaconta {
+                                                                            color: #745E46;
+                                                                            font-weight: bold;
+                                                                            text-align: center;
+                                                                            height: 6vh;
+                                                                        }
+                                                                        
+                                                                        .card {
+                                                                            background-color: #D07025;
+                                                                            box-sizing: border-box;
+                                                                            margin-top: 5vh;
+                                                                        }
+                                                                        
+                                                                        .row {
+                                                                            height: 50vh;
+                                                                        }
+                                                                        
+                                                                        .conta-login {
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                        }
+                                                                        
+                                                                        #link-login02 {
+                                                                            border: #D07025;
+                                                                            text-align: center;
+                                                                            cursor: pointer;
+                                                                            padding: 1rem 3rem;
+                                                                            display: inline-block;
+                                                                            border-radius: 3px;
+                                                                            margin: 1rem;
+                                                                            text-decoration: none;
+                                                                            font-family: system-ui;
+                                                                            font-size: 16px;
+                                                                            background-color: #D07025;
+                                                                            color: #fff;
+                                                                        }
+                                                                        
+                                                                        #link-login02:hover {
+                                                                            background-color: #FCB631;
+                                                                            font-weight: bold;
+                                                                        }
+                                                                        
+                                                                        #botao_cadastro1 {
+                                                                            background-color: #745E46;
+                                                                            color: #f1f1f1;
+                                                                        }
+                                                                        
+                                                                        #botao_cadastro1:hover {
+                                                                            background-color: #FCB631;
+                                                                            font-weight: bold;
+                                                                        }
+                                                                        
+                                                                        #botao_cadastro02 {
+                                                                            background-color: #745E46;
+                                                                            color: #f1f1f1;
+                                                                        }
+                                                                        
+                                                                        #botao_cadastro02:hover {
+                                                                            background-color: #FCB631;
+                                                                            font-weight: bold;
+                                                                        }
+                                                                        /*----------------------------------------------------------------------------------------*/
+                                                                        
+                                                                        footer {
+                                                                            padding: 10px;
+                                                                            font-size: 20px;
+                                                                            background-color: black;
+                                                                        }
+                                                                        
+                                                                        .footer-bar {
+                                                                            text-align: center;
+                                                                        }
+                                                                        
+                                                                        .text-footer {
+                                                                            color: white;
+                                                                        }
+                                                                        
+                                                                        .logos-footer {
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            margin-bottom: 10px;
+                                                                        }
+                                                                        
+                                                                        .logo-footer-logo {
+                                                                            width: 35px;
+                                                                        }
+                                                                        /* -------------------------------------------------------------Modal---------------------------------------------------------------------- */
+                                                                        
+                                                                        .subtitulo {
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                        }
+                                                                        
+                                                                        .subtitulo-text {
+                                                                            color: #745E46;
+                                                                            font-weight: bold;
+                                                                            margin-top: 5vh;
+                                                                            margin-bottom: 5vh;
+                                                                            width: 100vw;
+                                                                        }
+                                                                        
+                                                                        #buttom-seguinte {
+                                                                            background-color: transparent;
+                                                                            font-size: 1.5em;
+                                                                            margin-left: 60vw;
+                                                                            border: #745E46 solid;
+                                                                            text-decoration: none;
+                                                                            color: #745E46;
+                                                                        }
+                                                                        
+                                                                        #buttom-seguinte:hover {
+                                                                            font-weight: bold;
+                                                                            text-decoration-line: none;
+                                                                            color: #745E46;
+                                                                        }
+                                                                        
+                                                                        #buttom-seguinte01 {
+                                                                            background-color: transparent;
+                                                                            font-size: 1.5em;
+                                                                            margin-left: 60vw;
+                                                                            border: #745E46 solid;
+                                                                            text-decoration: none;
+                                                                            color: #745E46;
+                                                                        }
+                                                                        
+                                                                        #buttom-seguinte01:hover {
+                                                                            font-weight: bold;
+                                                                            text-decoration-line: none;
+                                                                            color: #745E46;
+                                                                        }
+                                                                        
+                                                                        label {
+                                                                            font-family: 'Roboto', sans-serif;
+                                                                            color: #745E46;
+                                                                        }
+                                                                        
+                                                                        .logo-responsivo {
+                                                                            display: none;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus {
+                                                                            margin-left: 50vw;
+                                                                            background-color: transparent;
+                                                                            border-color: transparent;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus:hover {
+                                                                            background-color: #FCB631;
+                                                                            border-color: #FCB631 solid;
+                                                                            border-radius: 10%;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus:focus {
+                                                                            background-color: #FCB631;
+                                                                            border-color: transparent !important;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus02 {
+                                                                            margin-left: 50vw;
+                                                                            background-color: transparent;
+                                                                            border-color: transparent;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus02:hover {
+                                                                            background-color: #FCB631;
+                                                                            border-color: #FCB631 solid;
+                                                                            border-radius: 10%;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus02:focus {
+                                                                            background-color: #FCB631;
+                                                                            border-color: transparent !important;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus03 {
+                                                                            margin-left: 50vw;
+                                                                            background-color: transparent;
+                                                                            border-color: transparent;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus03:hover {
+                                                                            background-color: #FCB631;
+                                                                            border-color: #FCB631 solid;
+                                                                            border-radius: 10%;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus03:focus {
+                                                                            background-color: #FCB631;
+                                                                            border-color: transparent !important;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus04 {
+                                                                            margin-left: 50vw;
+                                                                            background-color: transparent;
+                                                                            border-color: transparent;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus04:hover {
+                                                                            background-color: #FCB631;
+                                                                            border-color: #FCB631 solid;
+                                                                            border-radius: 10%;
+                                                                        }
+                                                                        
+                                                                        .form-group #plus04:focus {
+                                                                            background-color: #FCB631;
+                                                                            border-color: transparent !important;
+                                                                        }
+                                                                        
+                                                                        .delete {
+                                                                            background-color: #FCB631;
+                                                                            border-color: transparent;
+                                                                            border-radius: 10%;
+                                                                        }
+                                                                        /* ----------------------------------------------------Media------------------------------------------------------------------------------------- */
+                                                                        
+                                                                        @media (max-width: 900px) {
+                                                                            .cadastrar-nav {
+                                                                                display: none;
+                                                                            }
+                                                                            .svg-icon {
+                                                                                margin-top: 4px;
+                                                                            }
+                                                                        }
+                                                                        
+                                                                        @media (max-width: 760px) {
+                                                                            .logo {
+                                                                                display: none;
+                                                                            }
+                                                                            .logo-responsivo {
+                                                                                margin-top: 5px;
+                                                                                display: block;
+                                                                                width: 80px;
+                                                                            }
+                                                                            #link-login02 {
+                                                                                width: 350px;
+                                                                                font-size: 15px;
+                                                                            }
+                                                                            .card-text {
+                                                                                font-size: 0.7em;
+                                                                            }
+                                                                            footer {
+                                                                                font-size: 15px;
+                                                                            }
+                                                                        }
+                                                                        
+                                                                        @media screen and (max-width:570px) {
+                                                                            .card {
+                                                                                margin-top: 0.3vh;
+                                                                            }
+                                                                            .titulo {
+                                                                                margin-top: 0.5vh;
+                                                                                margin-bottom: 0.5vh;
+                                                                                text-align: center;
+                                                                            }
+                                                                            .link-login {
+                                                                                height: 15vh;
+                                                                            }
+                                                                            .titulo-novaconta {
+                                                                                font-size: 1em;
+                                                                                height: 6vh;
+                                                                            }
+                                                                        }
+                                                                        
+                                                                        @media screen and (max-height:800px) and (max-width:570px) {
+                                                                            .titulo-novaconta {
+                                                                                display: none;
+                                                                            }
+                                                                        }
+                                                                        
+                                                                        @media screen and (max-height:700px) and (max-width:570px) {
+                                                                            .titulo-novaconta {
+                                                                                display: none;
+                                                                            }
+                                                                            .card {
+                                                                                height: 25vh;
+                                                                                margin-bottom: 20px;
+                                                                            }
+                                                                            #buttom-seguinte {
+                                                                                font-size: 1em;
+                                                                            }
+                                                                        }
