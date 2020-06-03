@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icon logo.png" class="icone-head">
+    <link rel="stylesheet" href="./style/reset.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>AdestraDOG - Cadastre-se</title>
+</head>
+
+<body>
+    <header>
+        <div class="fixed-bar" id="nav-hide">
+            <div class="logo-responsivo">
+                <a href="index.html" class="home-button">
+                    <h1><img class="imagem-logo" src="img/logo-onlycasa.png" alt="AdestraDog"></h1>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html" class="home-button">
+                    <h1><img class="imagem-logo" src="img/logo.png" alt="AdestraDog"></h1>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a class="menu-item menu-item-buscar" href="buscar.html">Buscar</a></li>
+                    <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+                    <li>
+                        <a class="menu-item openbtn" onclick="openNav()" href="#">
+                            <p class="cadastrar-nav">Cadastre-se/Login</p>
+                            <div class="svg-icon"><svg id="menu-icon" enable-background="new 0 0 512 512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                                    <path
+                                        d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                                    <path
+                                        d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" />
+                                </svg></button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="image-collapse">
+                <img class="logo-collapse" src="img/logo-collapse.png" alt="logo-collapse" srcset="">
+            </div>
+            <h5>Login</h5>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+            <label for="password">Senha</label>
+            <input type="password" id="password" class="input-padrao" required>
+            <a href="#"><button class="button-nav button-entrar">Entre</button></a>
+
+            <p class="cadastrar-text">Ainda não tem conta ?<a href="cadastro.html"><button
+                        class="button-nav button-cadastrar">Cadastrar</button></a></p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>Cadastre-se</h1>
+            </div>
+            <div class="link-login">
+                <div class="conta-login">
+                    <a type="button" class="btn button-login" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" id="link-login02">Caso tenha uma conta faça login aqui</a>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <form action="sucesso.html" method="GET">
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Email:</label>
+                                            <input type="email" class="form-control" id="recipient-name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Senha:</label>
+                                            <input type="password" class="form-control" id="recipient-name" required>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn" data-dismiss="modal" id="link">Esqueceu sua
+                                            senha?</button>
+                                        <button type="submit" class="btn" id="Botao-entrar">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulo-novaconta">
+                <h4>Crie uma nova conta</h4>
+            </div>
+
+            <div class="titulo-novaconta">
+                <span>Escolha uma opção abaixo</span>
+            </div>
+            <div class="row">
+                <div class=" col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Quero Adestrar</h5>
+                            <p class="card-text">Escolha esta opção se você quer encontrar um profissional para adestrar seu cão.</p>
+                            <a id="botao_cadastro1" type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong">Cadastre-se</a>
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Cadastro</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="info-form2">
+                                                <div class="titulo">
+                                                    <h1>Quero Adestrar</h1>
+                                                    <div class="subtitulo">
+                                                        <div class="subtitulo-text">
+                                                            <h4>Dados Pessoais</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputname01">Nome</label>
+                                                        <input type="text" class="form-control" id="inputname01" placeholder="nome" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputlastname01">Sobrenome</label>
+                                                        <input type="text" class="form-control" id="inputlastname01" placeholder="sobrenome" required>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputcpf01">CPF</label>
+                                                        <input type="text" class="form-control" id="inputcpf01" placeholder="Ex.: 000.000.000-00" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputrg01">RG</label>
+                                                        <input type="text" class="form-control" id="inputrg01" placeholder="Ex.: 00.000.000-00" required>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <label for="inputdatenasc01">Data de Nascimento</label>
+                                                        <input type="text" class="form-control" id="inputdatenasc01" placeholder="Ex.: 00/00/0000" required>
+                                                    </div>
+
+                                                </div>
+                                                <div class="subtitulo">
+                                                    <div class="subtitulo-text">
+                                                        <h4>Endereço</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <label for="inputpais01">País</label>
+                                                        <input type="text" class="form-control" id="inputpais01" placeholder="Ex.: Brasil" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputcidade01">Cidade</label>
+                                                        <input type="text" class="form-control" id="inputcidade01" placeholder="Ex.: Salvador" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputestado01">Estado</label>
+                                                        <input type="text" class="form-control" id="inputestado01" placeholder="Ex.: Bahia" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputCEP01">CEP</label>
+                                                        <input type="text" class="form-control" id="inputCEP01" placeholder="Ex.: 0000-000" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputlogradouro01">Endereço</label>
+                                                        <input type="text" class="form-control" id="inputlogradouro01" placeholder="Ex.: Rua Pedro Cabral" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputnum01">Número</label>
+                                                        <input type="text" class="form-control" id="inputnum01" placeholder="Ex.: 00" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputComplemento01">Complemento</label>
+                                                        <input type="text" class="form-control" id="inputComplemento01" placeholder="Ex.:apto 00">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <div class="subtitulo">
+                                                            <div class="subtitulo-text">
+                                                                <h4>Dados de Acesso</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputemail01">Email</label>
+                                                                <input type="email" class="form-control" id="inputemail01" placeholder="Ex.: usuario@gmail.com" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputpassword01">Senha</label>
+                                                                <input type="password" class="form-control" id="inputpassword01" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <div class="subtitulo">
+                                                            <div class="subtitulo-text">
+                                                                <h4>Contato</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputtel01">Telefone</label>
+                                                                <input type="text" class="form-control" id="inputtel01" placeholder="Ex:. (00) 0000-0000" required>
+                                                            </div>
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputcel01">Celular</label>
+                                                                <input type="text" class="form-control" id="inputcel01" placeholder="Ex:. (00) 00000-0000" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="subtitulo">
+                                                    <div class="subtitulo-text">
+                                                        <h4>Meu Dog</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="num-dog">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12 col-sm-12">
+                                                            <label for="inputnome-dog">Nome</label>
+                                                            <input type="text" class="form-control" id="inputnome-dog" placeholder="nome do doguinho" required>
+                                                        </div>
+                                                        <div class="form-group col-md-12 col-sm-12">
+                                                            <label for="inputapelido-dog">Apelido</label>
+                                                            <input type="text" class="form-control" id="inputapelido-dog" placeholder="apelido do doguinho">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6 col-sm-6">
+                                                            <label for="inputidade-dog">Idade</label>
+                                                            <input type="text" class="form-control" id="inputidade-dog" placeholder="Ex.:03" required>
+                                                        </div>
+                                                        <div class="form-group col-md-6 col-sm-6">
+                                                            <label for="inputraca">Raça</label>
+                                                            <input type="text" class="form-control" id="inputraca" placeholder="Ex.: Yorkshire terrier" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <button type="button" id="plus">
+                                                            <span class="material-icons">
+                                                                playlist_add
+                                                                </span>
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+
+                                            <div id="error-list01" class='alert alert-danger alert-dismissible fade show' role="alert" hidden>
+                                                <ul>
+
+                                                </ul>
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="submit" id="buttom-seguinte">Concluir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sou Adestrador</h5>
+                            <p class="card-text">Escolha esta opção se você deseja entrar para prestar serviço na comunidade Adestra Dog. </p>
+                            <a id="botao_cadastro02" type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong02">Cadastre-se</a>
+                            <div class="modal fade" id="exampleModalLong02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle02" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle02">Cadastro</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="info-form">
+                                                <div class=" titulo">
+                                                    <h1>Sou Adestrador</h1>
+                                                    <div class="subtitulo">
+                                                        <div class="subtitulo-text">
+                                                            <h4>Dados Pessoais</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputname">Nome</label>
+                                                        <input type="text" class="form-control" id="inputname" placeholder="nome" required name="inputname">
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputlastname">Sobrenome</label>
+                                                        <input type="text" class="form-control" id="inputlastname" placeholder="sobrenome" required>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputcpf">CPF</label>
+                                                        <input type="text" class="form-control cpf" id="inputcpf" placeholder="Ex.: 000.000.000-00" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputrg">RG</label>
+                                                        <input type="text" class="form-control" id="inputrg" placeholder="Ex.: 00.000.000-00" required>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <label for="inputdatenasc">Data de Nascimento</label>
+                                                        <input type="text" class="form-control" id="inputdatenasc" placeholder="Ex.: 00/00/0000" required>
+                                                    </div>
+
+                                                </div>
+                                                <div class="subtitulo">
+                                                    <div class="subtitulo-text">
+                                                        <h4>Endereço</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <label for="inputpais">País</label>
+                                                        <input type="text" class="form-control" id="inputpais" placeholder="Ex.: Brasil" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputcidade">Cidade</label>
+                                                        <input type="text" class="form-control" id="inputcidade" placeholder="Ex.: Salvador" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputestado">Estado</label>
+                                                        <input type="text" class="form-control" id="inputestado" placeholder="Ex.: Bahia" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputCEP">CEP</label>
+                                                        <input type="text" class="form-control" id="inputCEP" placeholder="Ex.: 0000-000" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputlogradouro">Endereço</label>
+                                                        <input type="text" class="form-control" id="inputlogradouro" placeholder="Ex.: Rua Pedro Cabral" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputCEP">Número</label>
+                                                        <input type="text" class="form-control" id="inputnum" placeholder="Ex.: 00" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputComplemento">Complemento</label>
+                                                        <input type="text" class="form-control" id="inputComplemento" placeholder="Ex.:apto 00">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <div class="subtitulo">
+                                                            <div class="subtitulo-text">
+                                                                <h4>Dados de Acesso</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputemail">Email</label>
+                                                                <input type="email" class="form-control" id="inputemail" placeholder="Ex.: usuario@gmail.com" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputpassword">Senha</label>
+                                                                <input type="password" class="form-control" id="inputpassword" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <div class="subtitulo">
+                                                            <div class="subtitulo-text">
+                                                                <h4>Contato</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputtel">Telefone</label>
+                                                                <input type="text" class="form-control" id="inputtel" placeholder="Ex:. (00) 0000-0000" required>
+                                                            </div>
+                                                            <div class="form-group col-md-12 col-sm-12">
+                                                                <label for="inputcel">Celular</label>
+                                                                <input type="text" class="form-control" id="inputcel" placeholder="Ex:. (00) 00000-0000" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="subtitulo">
+                                                    <div class="subtitulo-text">
+                                                        <h4>Formação</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="nivel-escolar">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6 col-sm-6">
+                                                            <label for="exampleFormControlSelect1">Nível de
+                                                            Escolaridade</label>
+                                                            <select class="form-control" id="exampleFormControlSelect">
+                                                            <option value="">Selecione a escolaridade</option>
+                                                            <option value="fundamentalC">Ensino Fundamental Completo
+                                                            </option>
+                                                            <option value="fundamentalI">Ensino Fundamental Incompleto
+                                                            </option>
+                                                            <option value="medioC">Ensino Médio Completo</option>
+                                                            <option value="medioI">Ensino Médio Incompleto</option>
+                                                            <option value="superiorC">Ensino Superior Bacharelado
+                                                            </option>
+                                                            <option value="superiorI">Ensino Superior Tecnólogo
+                                                            </option>
+                                                            <option value="pos">Pós graduação</option>
+                                                            <option value="mestrado">Mestrado</option>
+                                                            <option value="doutorado">Doutorado</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6 col-sm-6">
+                                                            <label for="cursos">Cursos</label>
+                                                            <input type="text" class="form-control" id="cursos" placeholder="Ex.:Direito" required>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <button type="button" id="plus02">
+                                                        <span class="material-icons">
+                                                            playlist_add
+                                                            </span>
+                                                    </button>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <label for="select-cursos11">Certificações</label>
+                                                        <input type="text" class="form-control" id="Certificacoes" placeholder="Ex.:Educação do seu dog" required>
+                                                    </div>
+
+                                                    <div class="form-group col-md-12 col-sm-12">
+                                                        <label for="experiencia">Experiência </label>
+                                                        <input type="text" class="form-control" id="experiencia" placeholder="Ex.: Babá de dog" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-6">
+                                                        <label for="inputaarquivos">Certificados</label>
+                                                        <input type="file" class="form-control-file" id="inputaarquivos" required>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                            <div id="error-list" class='alert alert-danger alert-dismissible fade show' role="alert" hidden>
+                                                <ul>
+
+                                                </ul>
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" id="buttom-seguinte01" class="submit">Concluir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-bar">
+            <div class="logos-footer">
+                <img class="logo-footer-logo" src="img/logo-face.png" alt="Facebook" srcset="">
+                <img class="logo-footer-logo" src="img/logo-whats.png" alt="Instagram" srcset="">
+                <img class="logo-footer-logo" src="img/logo-insta.png" alt="Whatsapp" srcset="">
+            </div>
+            <p class="text-footer">AdestraDOG 2020 - Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="js/cadastro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+</body>
+
+</html>

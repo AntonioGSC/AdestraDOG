@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icon logo.png" class="icone-head">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/header-footer.css">
+    <link rel="stylesheet" href="style/busca.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <title>AdestraDOG - Buscar</title>
+</head> 
+
+<body>
+    <header>
+        <div class="fixed-bar" id="nav-hide">
+            <div class="logo-responsivo">
+                <a href="index.html" class="home-button">
+                    <h1><img class="imagem-logo" src="img/logo-onlycasa.png" alt="AdestraDog"></h1>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html" class="home-button">
+                    <h1><img class="imagem-logo" src="img/logo.png" alt="AdestraDog"></h1>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a class="menu-item menu-item-buscar" href="buscar.html">Buscar</a></li>
+                    <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+                    <li><a class="menu-item openbtn" onclick="openNav()" href="#"><p class="cadastrar-nav">Cadastre-se/Login</p><div
+                                class="svg-icon"><svg id="menu-icon" enable-background="new 0 0 512 512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                                    <path
+                                        d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                                    <path
+                                        d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" />
+                                </svg></button></div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="image-collapse">
+                <img class="logo-collapse" src="img/logo-collapse.png" alt="logo-collapse" srcset="">
+            </div>
+            <h5>Login</h5>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+            <label for="password">Senha</label>
+            <input type="password" id="password" class="input-padrao" required>
+            <a href="#"><button class="button-nav button-entrar">Entre</button></a>
+            
+            <p class="cadastrar-text">Ainda não tem conta ?<a href="cadastro.html"><button class="button-nav button-cadastrar">Cadastrar</button></a></p>
+        </div>
+    </header>
+
+
+
+        <main>
+            
+            <div class="search-container">
+                <div class="image-container">
+                   <img class="search-dogs" src="buscar/img-buscar/fundo-div-buscar.png" alt="4 happy dogs with a person"> 
+                </div>
+
+                <div class="search-bar">
+
+                    <label for="searchInput">Encontre um adestrador <span id="next">próximo a você</span></label>
+                    <div class="flex-container">
+                        <textarea  maxlength="50" cols="20" rows="1"  name="searchInput" id="searchInput" class="search-txt small" placeholder="Digite aqui a sua cidade"></textarea>
+                        <button id="button-search" class="btn-search"><svg class="button-image" id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371 401"><defs><style>.cls-1{fill:#eedea3;}</style></defs><title>lupa-png</title><path class="cls-1" d="M208.94,268.57A113,113,0,0,1,57.05,242.94C23.17,198.77,27,136.55,66.35,95.68,104.57,56,166.84,50.76,212.52,83.36c46.9,33.47,62.8,101.18,28,153.69l16.35,14.08q32.64,28,65.31,56.1c7.52,6.43,11.86,14.34,11.77,24.37-.11,12.16-8.41,23.74-20.23,28.38a29,29,0,0,1-32.52-7.59c-8.1-8.9-15.78-18.18-23.63-27.3l-47.44-55.17C209.82,269.5,209.44,269.11,208.94,268.57ZM146.63,90.65a84,84,0,1,0,84,84.15A84,84,0,0,0,146.63,90.65Z"/></svg></button>
+                    </div>
+                    
+                </div>
+                  
+            </div>
+
+            <div class="wrapper">
+                <div class="title">
+                    <p class="userMessage">Encontre <span id="title-off">aqui os melhores</span> adestradores online em</p>
+                    <p class="cityName"></p>
+                </div>
+                <div class="container">
+                    <div class="adestradorProfile">
+                       <div class="left-hand-side">
+                            <div class="div-imagem">
+                            <img src="buscar/img-buscar/profile-1.png" class="profile-image">
+                            </div>
+                           <div class="estrelas">
+                                <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                        </div>
+                           <p class="avaliacao">2 avaliações</p>
+                       </div>
+                       <div class="center-profile">
+                        
+                            <p class="nome">Martin Pechy</p>
+                            <p class="twitter">@martinpechy</p>
+                            <p class="description">Tenho uma vasta experiência com adestramento, com mais de 100 dogs adestrados, minha especialidade são os Border Collies!</p>
+                            
+                       </div>
+                       <div class="right-hand-side">
+                           <button class="contact-button" id="contactButton" name="btn-contact">Contatar</button>
+                       </div>
+                    </div>
+
+                    <div class="adestradorProfile">
+                        <div class="left-hand-side">
+                            <img src="buscar/img-buscar/profile-2.png" class="profile-image">
+                            <div class="estrelas">
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                         </div>
+                            <p class="avaliacao">2 avaliações</p>
+                        </div>
+                        <div class="center-profile">
+                         
+                             <p class="nome">Markel Hall</p>
+                             <p class="twitter">@mvrc_savage</p>
+                             <p class="description">Sou iniciante no adestramento, pois acabei de sair do curso. Porém, tenho uma enorme paixão pelos dogs, prometo um ótimo trabalho! Vem comigo!</p>
+                             
+                        </div>
+                        <div class="right-hand-side">
+                            <button class="contact-button" id="contactButton" name="btn-contact">Contatar</button>
+                        </div>
+                     </div>
+                     <div class="adestradorProfile">
+                        <div class="left-hand-side">
+                            <img src="buscar/img-buscar/profile-3.jpg" class="profile-image">
+                            <div class="estrelas">
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                         </div>
+                            <p class="avaliacao">2 avaliações</p>
+                        </div>
+                        <div class="center-profile">
+                         
+                             <p class="nome">Stefan Stefancik </p>
+                             <p class="twitter">@theirtweeter</p>
+                             <p class="description">Sou adestradora há pouco mais de 1 ano. Tenho muita experiência com Golden Retriever e vira-latas. Se quiserem um bom serviço, só falar comigo!</p>
+                             
+                        </div>
+                        <div class="right-hand-side">
+                            <button class="contact-button" id="contactButton" name="btn-contact">Contatar</button>
+                        </div>
+                     </div>
+
+                     <div class="adestradorProfile">
+                        <div class="left-hand-side">
+                            <img src="buscar/img-buscar/profile-4.png" class="profile-image">
+                            <div class="estrelas">
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                                 <svg class="estrela" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 364"><defs><style>.cls-1{fill:#fcb631;}</style></defs><title>estrela</title><g id="pagina-home"><path class="cls-1" d="M316.59,143.1A23.14,23.14,0,0,0,314,145q-35.07,34.14-70.14,68.26c-2.39,2.31-3.24,4.5-2.66,7.82,5.49,31.34,10.83,62.71,16.21,94.06.33,1.94.64,3.88,1.05,6.43l-3.73-1.92q-43.26-22.74-86.48-45.55a7.84,7.84,0,0,0-8.25.05q-43,22.82-86.19,45.4l-4,2c1.47-8.62,2.85-16.8,4.25-25,4.42-25.74,8.9-51.46,13.11-77.23.28-1.72-1-4.24-2.39-5.59-19.57-19.27-39.31-38.36-58.91-57.59-4.61-4.52-8.86-9.4-13.29-14.14,6.82-1,14.12-2.13,21.43-3.19q39.59-5.73,79.18-11.39c2.83-.4,4.36-1.9,5.59-4.39Q140.31,79.26,162,35.47c.56-1.14,1.16-2.27,2-3.91.84,1.56,1.46,2.65,2,3.78q21.65,43.82,43.2,87.66a7.56,7.56,0,0,0,6.47,4.63q47.25,6.74,94.48,13.67l5.86.83C316.22,142.46,316.41,142.78,316.59,143.1Z"/></g></svg>
+                         </div>
+                            <p class="avaliacao">2 avaliações</p>
+                        </div>
+                        <div class="center-profile">
+                         
+                             <p class="nome">Valerie Elash</p>
+                             <p class="twitter">@elashv</p>
+                             <p class="description">Como dá pra ver pela foto de perfil, amo cachorros! Tenho experiência principalmente com Samoiedas (esse da foto é o Tobi), mas todos os dogs são bem vindos! Fico à disposição!</p>
+                             
+                        </div>
+                        <div class="right-hand-side">
+                            <button class="contact-button" id="contactButton" name="btn-contact">Contatar</button>
+                        </div>
+                     </div>
+                    
+
+                </div>  
+                <div class="div-final">
+                    <div class="card-left-container">
+                        <div class="card-left">
+                        <div class="card-title">
+                            <p>Como contratar um serviço de adestramento</p>
+                        </div>
+                                <p>Busque um dos nossos adestradores através do site! Contate-os, explique os seus detalhes e prepare-se para o melhor serviço da sua vida!</p>
+                            
+                        </div>
+                    </div>
+                    <div class="card-right-container">
+                        <div class="card-right">
+                            <div class="card-title">
+                                <p>Como ser um profissional cadastrado</p>
+                            </div>
+                            <p>Registre-se na nossa plataforma, insira as suas informações e detalhes e espere um cliente te contatar! <a href="cadastro.html" class="sign-up">Seja um profissional cadastrado!</a></p>
+
+                            
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div> 
+        </main>
+
+        <footer>
+            <div class="footer-bar">
+                <div class="logos-footer">
+                    <img class="logo-footer-logo" src="img/logo-face.png" alt="Facebook" srcset="">
+                    <img class="logo-footer-logo" src="img/logo-whats.png" alt="Instagram" srcset="">
+                    <img class="logo-footer-logo" src="img/logo-insta.png" alt="Whatsapp" srcset="">
+                </div>
+                <p class="text-footer">AdestraDOG 2020 - Alguns direitos reservados.</p>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+        <script src="js/buscar.js"></script>
+
+    </body>
+    </html>

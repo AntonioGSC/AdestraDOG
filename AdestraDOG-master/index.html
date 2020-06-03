@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icon logo.png" class="icone-head">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <title>AdestraDOG - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="fixed-bar" id="nav-hide">
+            <div class="logo-responsivo">
+                <a href="index.html" class="home-button">
+                    <h1><img class="imagem-logo" src="img/logo-onlycasa.png" alt="AdestraDog"></h1>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html" class="home-button">
+                    <h1><img class="imagem-logo" src="img/logo.png" alt="AdestraDog"></h1>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a class="menu-item menu-item-buscar" href="buscar.html">Buscar</a></li>
+                    <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+                    <li><a class="menu-item openbtn" onclick="openNav()" href="#"><p class="cadastrar-nav">Cadastre-se/Login</p><div
+                                class="svg-icon"><svg id="menu-icon" enable-background="new 0 0 512 512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                                    <path
+                                        d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                                    <path
+                                        d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" />
+                                </svg></button></div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="image-collapse">
+                <img class="logo-collapse" src="img/logo-collapse.png" alt="logo-collapse" srcset="">
+            </div>
+            <h5>Login</h5>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+            <label for="password">Senha</label>
+            <input type="password" id="password" class="input-padrao" required>
+            <a href="#"><button class="button-nav button-entrar">Entre</button></a>
+            
+            <p class="cadastrar-text">Ainda não tem conta ?<a href="cadastro.html"><button class="button-nav button-cadastrar">Cadastrar</button></a></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu-principal">
+            <img class="happy-dog" src="img/happy-dog.jpg" alt="dog feliz" srcset="">
+            <div class="slogan">
+                <p class="frase-slogan">Seu Melhor amigo feliz todos os dias</p>
+            </div>
+        </div>
+        <section class="depoimentos">
+            <div class="container">
+                <h2 class="titulo-centenas">Faça como centenas de Pet-Lovers</h2>
+                <h3 class="depoimentos-titulo">Depoimentos</h3>
+                <div class="depoimentos-div">
+                    <div class="cartao-depoimento">
+                        <div class="perfil-depoimento">
+                            <h4 class="info-perfil">Joe Caione</h4>
+                            <div class="foto-perfil-depoimento">
+                                <img class="perfil-foto" src="img/perfil-carla.jpg" alt="foto perfil" srcset="">
+                            </div>
+                            <p class="info-perfil">@joeyc</p>
+                        </div>
+                        <div class="texto-depoimento">
+                            <p class="sinopse-depoimento">O meu bebê Fred nunca esteve tão feliz e educado quanto agora,
+                                sou imensamente agradecida a AdestraDOG pelos seus serviços, cuidaram muito bem dele
+                                durante o tempo em que utilizava o aplicativo. SUPER RECOMENDO!!!</p>
+                            <p class="rodape-depoimento">Mãe do Pastor Alemão Fred</p>
+                        </div>
+                    </div>
+                    <div class="cartao-depoimento">
+                        <div class="perfil-depoimento">
+                            <h4 class="info-perfil">Jonas Kakaroto</h4>
+                            <div class="foto-perfil-depoimento">
+                                <img class="perfil-foto" src="img/perfil-jonas.jpg" alt="foto perfil" srcset="">
+                            </div>
+                            <p class="info-perfil">@jkakaroto</p>
+                        </div>
+                        <div class="texto-depoimento">
+                            <p class="sinopse-depoimento">A minha Darla está ótima e brincalhona, adoro chegar em casa
+                                depois de um dia exaustivo de trabalho e passar a noite inteira brincando com ela,
+                                agradeço essa alegria e energia a AdestraDOG e seus funcionários. 5 Estrelas !!!</p>
+                            <p class="rodape-depoimento">Pai da Poodle Darla</p>
+                        </div>
+                    </div>
+                    <div class="cartao-depoimento">
+                        <div class="perfil-depoimento">
+                            <h4 class="info-perfil">Sergio de Paula</h4>
+                            <div class="foto-perfil-depoimento">
+                                <img class="perfil-foto perfil-sergio" src="img/perfil-sergio.jpg" alt="foto perfil"
+                                    srcset="">
+                            </div>
+                            <p class="info-perfil">@sspaula</p>
+                        </div>
+                        <div class="texto-depoimento">
+                            <p class="sinopse-depoimento">Sou muito grato a AdestraDOG e seus adestradores pelo serivço
+                                feito, meus fihotes nunca estiveram tão felizes quanto agora, brincam e entendem o que
+                                eu digo. AMO A ADESTRADOG!!! Recomendo a todos que amam seus Pets.</p>
+                            <p class="rodape-depoimento">Pai dos irmãos Julio e Verne</p>
+                        </div>
+                    </div>
+                    <div class="cartao-depoimento">
+                        <div class="perfil-depoimento">
+                            <h4 class="info-perfil">Roberta Hintze</h4>
+                            <div class="foto-perfil-depoimento">
+                                <img class="perfil-foto" src="img/perfil-roberta.jpg" alt="foto perfil" srcset="">
+                            </div>
+                            <p class="info-perfil">@hudsonhintze</p>
+                        </div>
+                        <div class="texto-depoimento">
+                            <p class="sinopse-depoimento">Meu Golden era muito bagunceiro, eu deixava ele sozinho por
+                                poucos minutos e ele destruia tudo que via, depois que conheci a AdestraDOG este
+                                problema mudou, nunca o vi tão feliz e obediente. Obrigado AdestraDOG !!!!</p>
+                            <p class="rodape-depoimento">Mãe do Golden Retriever Charlie</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="titulo-beneficios">Benefícios</h2>
+                <div class="beneficios-grid">
+                    <div class="beneficios-items">
+                        <img class="image-benefits" src="img/benefits-icon1.png" alt="acompanhamento" srcset="">
+                        <p class="text-beneficios">Acompanhamento profissional</p>
+                    </div>
+                    <div class="beneficios-items">
+                        <img class="image-benefits" src="img/benefits-icon3.png" alt="acompanhamento" srcset="">
+                        <p class="text-beneficios">Seu cão mais carinhoso</p>
+                    </div>
+                    <div class="beneficios-items">
+                        <img class="image-benefits" src="img/benefits-icon2.png" alt="acompanhamento" srcset="">
+                        <p class="text-beneficios">Bom comportamento diário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="encontrar-adestrador">
+            <div class="container">
+                <h2 class="titulo-encontrar">Encontre um adestrador mais próximo de você ou se Cadastre e faça parte do
+                    nosso time !</h2>
+                <div class="cadastro-home">
+                    <div class="cadastro-itens">
+                        <a class="encontrar-link" href="cadastro.html">
+                            <div class="imagem-cadastro">
+                                <div class="svg-cadastro">
+                                    <img src="img/certificade-encontrar.png" alt="Certificado" class="img-encontrar">
+                                </div>
+                                <p class="text-encontrar">Cadastrar como um profissional</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cadastro-itens">
+                        <a class="encontrar-link" href="cadastro.html">
+                            <div class="imagem-cadastro">
+                                <div class="svg-cadastro">
+                                    <img src="img/lupa-encontrar.png" alt="Certificado" class="img-encontrar-lupa">
+                                </div>
+                                <p class="text-encontrar">Quero encontrar um adestrador</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bar">
+            <div class="logos-footer">
+                <img class="logo-footer-logo" src="img/logo-face.png" alt="Facebook" srcset="">
+                <img class="logo-footer-logo" src="img/logo-whats.png" alt="Instagram" srcset="">
+                <img class="logo-footer-logo" src="img/logo-insta.png" alt="Whatsapp" srcset="">
+            </div>
+            <p class="text-footer">AdestraDOG 2020 - Alguns direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

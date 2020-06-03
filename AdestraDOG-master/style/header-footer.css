@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-responsivo{
+    display: none;
+}
+
+.fixed-bar{
+    position: fixed;
+    width: 100%;
+    background-color: #f1e375;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.logo{
+    width: 320px;
+}
+
+.imagem-logo{
+    width: 100%;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+.nav-bar ul li{
+    margin: 0em 1em;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item{
+    color: #735d45;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+}
+
+.menu-item-buscar{
+    color: #d06f25;
+}
+
+#menu-icon{
+    width: 25px;
+    margin-left: 5px;
+    fill: #735d45;
+}
+
+/* The sidebar menu */
+.sidebar {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 60px;
+    right: 0;
+    background-color: #f1e375; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    text-align: center;
+}
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+  }
+
+  .sidebar p {
+    padding: 2px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #735d45;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
+  .sidebar h5{
+    padding: 8px 12px 8px 8px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #735d45;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
+  .sidebar label{
+    padding: 8px 8px 2px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #735d45;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+  }
+
+  .sidebar .input-padrao{
+    padding: 8px 4px;
+    width: 90%;
+    margin: 0 16px;
+    text-align: left;
+    color: #735d45;
+    border: 3px solid #d06f25;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .sidebar .button-entrar{
+        background:    #d07025;
+        padding:       5px 45px;
+        display:       inline-block;
+        text-align:    center; 
+        box-shadow: 0 0 5px #d07025;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 8px;
+    }
+
+    .sidebar .button-nav:hover{
+        background: #735d45;
+        cursor: pointer;
+        transition: 0.7s all;
+        transform: scale(1.1);
+    }
+
+    .sidebar .button-cadastrar{
+        background:    #d07025;
+        padding: 4px 8px;
+        text-align:    center; 
+        box-shadow: 0 0 5px #d07025;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+  .sidebar .input-padrao::placeholder{
+      color: #735d45;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.image-collapse{
+    width: 250px;
+}
+
+.logo-collapse{
+    width: 100%;
+}
+
+body{
+    background-color: #d06f25;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+}
+
+.footer-bar{
+    text-align: center;
+}
+
+.text-footer{
+    color: white;
+}
+
+.logos-footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo-footer-logo{
+    width: 35px;
+}
+
+@media (max-width: 1400px) {
+    footer{
+        clear: both;
+        position: relative;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 900px){ 
+    .cadastrar-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 760px){ 
+    .logo{
+        display: none;
+    }
+
+    .logo-responsivo{
+        display: block;
+        width: 80px;
+    }
+
+    .sidebar {
+        top: 55px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
