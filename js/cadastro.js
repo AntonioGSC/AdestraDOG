@@ -335,7 +335,6 @@ function insertCertificado() {
              <input type="text" class="form-control" id="Certificacoes" placeholder="Ex.:Educação do seu dog" required>
          </div>
         </div>
-        </div>
             <div class="form-group col-md-12 col-sm-12">
                 <button type="button" onclick="removeCertificado([certificado-Id])" class="delete">
                     <span class="material-icons">
