@@ -343,7 +343,9 @@ function insertCertificado() {
                     </span>
                 </button>
             </div>
-        </div>
+
+        </div>   
+    </div>
     
 
 `;
