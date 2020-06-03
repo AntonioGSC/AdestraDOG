@@ -113,6 +113,7 @@
     display: block;
     transition: 0.3s;
     text-align: left;
+    font-weight: bold;
   }
 
   .sidebar .input-padrao{
